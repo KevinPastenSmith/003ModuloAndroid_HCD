@@ -29,7 +29,8 @@ public class Nuevo extends AppCompatActivity {
 
     //Metodo boton nuevo proyecto
     public void btnNuevoProyecto (View view){
-
+        Intent proyectoNuevo = new Intent(this,Nuevo_Proyecto.class);
+        startActivity(proyectoNuevo);
     }
 
     //Metodo boton nuevo sistema de transporte helicoidal
