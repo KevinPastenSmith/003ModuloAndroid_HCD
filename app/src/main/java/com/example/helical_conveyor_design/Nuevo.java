@@ -24,4 +24,40 @@ public class Nuevo extends AppCompatActivity {
         btn7_nuevoTubo = (Button) findViewById(R.id.btn_nuevo_nuevotubo);
 
     }
+
+    //Metodo boton nuevo proyecto
+    public void btnNuevoProyecto (){
+
+    }
+
+    //Metodo boton nuevo sistema de transporte helicoidal
+    public void btnNuevoSistema (){
+
+    }
+
+    //Metodo boton nuevo material
+    public void btnNuevoMaterial (){
+
+    }
+
+    //Metodo boton nuevo motor
+    public void btnNuevoMotor (){
+
+    }
+
+    //Metodo boton nuevo transportador
+    public void btnNuevoTransportador (){
+
+    }
+
+    //Metodo boton nueva helice
+    public void btnNuevaHelice (){
+
+    }
+
+    //Metodo boton nuevo tubo
+    public void btnNuevoTubo (){
+
+    }
+
 }
