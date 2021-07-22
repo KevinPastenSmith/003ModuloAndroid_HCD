@@ -2,9 +2,11 @@ package com.example.helical_conveyor_design;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+
 
 public class Nuevo extends AppCompatActivity {
 
@@ -26,37 +28,39 @@ public class Nuevo extends AppCompatActivity {
     }
 
     //Metodo boton nuevo proyecto
-    public void btnNuevoProyecto (){
+    public void btnNuevoProyecto (View view){
 
     }
 
     //Metodo boton nuevo sistema de transporte helicoidal
-    public void btnNuevoSistema (){
+    public void btnNuevoSistema (View view){
 
     }
 
     //Metodo boton nuevo material
-    public void btnNuevoMaterial (){
+    public void btnNuevoMaterial (View view){
 
+        Intent materialNuevo = new Intent(this,Nuevo_Material.class);
+        startActivity(materialNuevo);
     }
 
     //Metodo boton nuevo motor
-    public void btnNuevoMotor (){
+    public void btnNuevoMotor (View view){
 
     }
 
     //Metodo boton nuevo transportador
-    public void btnNuevoTransportador (){
+    public void btnNuevoTransportador (View view){
 
     }
 
     //Metodo boton nueva helice
-    public void btnNuevaHelice (){
+    public void btnNuevaHelice (View view){
 
     }
 
     //Metodo boton nuevo tubo
-    public void btnNuevoTubo (){
+    public void btnNuevoTubo (View view){
 
     }
 

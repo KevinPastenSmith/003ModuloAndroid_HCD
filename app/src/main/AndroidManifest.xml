@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design">
+        <activity android:name=".Nuevo_Proyecto"></activity>
         <activity android:name=".Logueo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
