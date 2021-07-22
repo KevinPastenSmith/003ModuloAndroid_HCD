@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_nuevo_material_selecTipoMezcla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_nuevo_material_selecTipoMezcla_String"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombreMaterial" />
+
+    <Spinner
+        android:id="@+id/sp_clasificacionMaterial"
+        android:layout_width="320dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_clasificacionMaterial"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ClasificacionMaterial" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="165dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nuevo_material_selecTipoMezcla">
+
+        <RadioButton
+            android:id="@+id/rb_mezclaHomogenea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_mezclaHomogenea_String" />
+
+        <RadioButton
+            android:id="@+id/rb_mezclaHeterogenea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_mezclaHeterogenea_String" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_nuevo_material_nombreMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_nombreMaterial_String"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_nombreMaterial"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/et_NombreMaterial_String"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nuevo_material_nombreMaterial" />
+
+    <TextView
+        android:id="@+id/tv_ClasificacionMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_clasificacionMaterial_String"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <ImageButton
+        android:id="@+id/ibtn_clasificacionMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ClasificacionMaterial"
+        app:srcCompat="?attr/actionModePasteDrawable" />
+
+    <TextView
+        android:id="@+id/tv_densidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_densidad_String"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_clasificacionMaterial" />
+
+    <TextView
+        android:id="@+id/tv_abrasividad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_abrasividad_String"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_densidad" />
+
+    <TextView
+        android:id="@+id/tv_fluidez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_fluidez_String"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abrasividad" />
+
+    <TextView
+        android:id="@+id/tv_tipoMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_tipoMaterial_String"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fluidez" />
+
+    <TextView
+        android:id="@+id/tv_categoriaPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_categoriaPeso_String"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tipoMaterial" />
+</androidx.constraintlayout.widget.ConstraintLayout>
