@@ -30,13 +30,13 @@
     <string name="tv_proyectosComunidad_String">Proyectos de la Comunidad</string>
 
     //Strings de activity "nuevo"
-    <string name="tv_nuevo_proyecto_String">Nuevo Proyecto</string>
-    <string name="tv_nuevo_sistemaHelicoidal_String">Nuevo Sistema de Transporte Helicoidal</string>
-    <string name="tv_nuevo_material_String">Nuevo Material</string>
-    <string name="tv_nuevo_motor_String">Nuevo Motor</string>
-    <string name="tv_nuevo_transportador_String">Nuevo Transportador</string>
-    <string name="tv_nueva_helice_String">Nueva Helice</string>
-    <string name="tv_nuevo_tubo_String">Nuevo Tubo</string>
+    <string name="btn_nuevo_proyecto_String">Nuevo Proyecto</string>
+    <string name="btn_nuevo_sistemaHelicoidal_String">Nuevo Sistema de Transporte Helicoidal</string>
+    <string name="btn_nuevo_material_String">Nuevo Material</string>
+    <string name="btn_nuevo_motor_String">Nuevo Motor</string>
+    <string name="btn_nuevo_transportador_String">Nuevo Transportador</string>
+    <string name="btn_nueva_helice_String">Nueva Helice</string>
+    <string name="btn_nuevo_tubo_String">Nuevo Tubo</string>
 
     //Strings de activity "nuevo material"
     <string name="tv_nombreMaterial_String">Nombre Material</string>

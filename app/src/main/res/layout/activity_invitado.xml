@@ -10,11 +10,11 @@
         android:id="@+id/et_invitado_nickname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
         android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/et_invitado_nickName_String"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,10 +22,10 @@
         android:id="@+id/tv_invitado_holainvitado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="184dp"
         android:layout_marginTop="64dp"
         android:text="@string/tv_invitado_HolaInvitado_String"
         android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_invitado_nickname" />
 
@@ -33,10 +33,10 @@
         android:id="@+id/btn_invitado_nuevo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
         android:layout_marginTop="100dp"
         android:onClick="btn_nuevo"
         android:text="@string/btn_invitado_nuevo_String"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_invitado_holainvitado" />
 
@@ -44,9 +44,9 @@
         android:id="@+id/btn_invitado_adminproyectactual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="76dp"
         android:text="@string/btn_invitado_adminProyectActual"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_invitado_nuevo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
