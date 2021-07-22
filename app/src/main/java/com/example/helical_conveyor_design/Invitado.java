@@ -26,7 +26,6 @@ public class Invitado extends AppCompatActivity {
         btn1_invitado_nuevo = (Button) findViewById(R.id.btn_invitado_nuevo);
         btn2_invitado_adminProyectActual = (Button) findViewById(R.id.btn_invitado_adminproyectactual);
 
-        holaInvitado(et1_invitado_nickName);
     }
 
     //Metodo button "nuevo"
