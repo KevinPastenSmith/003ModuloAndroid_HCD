@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/et_crearcuenta_mail_String"
         android:inputType="textPersonName"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/et_crearcuenta_password_String"
         android:inputType="textPassword"
@@ -34,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/et_crearcuenta_confirmarpassword_String"
         android:inputType="textPassword"
@@ -42,13 +42,13 @@
         app:layout_constraintTop_toBottomOf="@+id/et_crearcuenta_password" />
 
     <EditText
-        android:id="@+id/et_crearcuenta_nickname"
+        android:id="@+id/et_crearCuenta_nickUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
-        android:hint="@string/et_crearcuenta_nickname_String"
+        android:hint="@string/et_crearcuenta_nickUsuario_String"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_crearcuenta_password2" />
@@ -58,21 +58,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="@string/et_crearcuenta_profesionoficio_String"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_crearcuenta_nickname" />
+        app:layout_constraintTop_toBottomOf="@+id/et_crearCuenta_nickUsuario" />
 
     <Button
         android:id="@+id/btn_crearcuenta_registrar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/btn_crearcuenta_registrar_String"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginBottom="48dp"
-        android:text="@string/btn_crearcuenta_registrar_String"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_crearcuenta_profesionoficio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

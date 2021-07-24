@@ -7,7 +7,7 @@
 
     <Button
         android:id="@+id/btn_nuevo_nuevoproyecto"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:onClick="btnNuevoProyecto"
@@ -19,7 +19,7 @@
 
     <Button
         android:id="@+id/btn_nuevo_nuevoSistTransHeli"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="@string/btn_nuevo_sistemaHelicoidal_String"
@@ -30,7 +30,7 @@
 
     <Button
         android:id="@+id/btn_nuevo_nuevomaterial"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:onClick="btnNuevoMaterial"
@@ -42,7 +42,7 @@
 
     <Button
         android:id="@+id/btn_nuevo_nuevomotor"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="@string/btn_nuevo_motor_String"
@@ -53,7 +53,7 @@
 
     <Button
         android:id="@+id/btn_nuevo_nuevotransportador"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="@string/btn_nuevo_transportador_String"
@@ -64,7 +64,7 @@
 
     <Button
         android:id="@+id/btn_nuevo_nuevahelice"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="@string/btn_nueva_helice_String"
@@ -75,7 +75,7 @@
 
     <Button
         android:id="@+id/btn_nuevo_nuevotubo"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="@string/btn_nuevo_tubo_String"

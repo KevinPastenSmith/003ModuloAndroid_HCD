@@ -6,35 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".Invitado">
 
-    <EditText
-        android:id="@+id/et_invitado_nickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:hint="@string/et_invitado_nickName_String"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tv_invitado_holainvitado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="@string/tv_invitado_HolaInvitado_String"
+        android:layout_marginTop="50dp"
+        android:hint="@string/tv_invitado_HolaInvitado_String"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_invitado_nickname" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_invitado_nuevo"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:onClick="btn_nuevo"
+        android:onClick="btnNuevo"
         android:text="@string/btn_invitado_nuevo_String"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +31,7 @@
 
     <Button
         android:id="@+id/btn_invitado_adminproyectactual"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
         android:text="@string/btn_invitado_adminProyectActual"

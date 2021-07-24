@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Helical_Conveyor_Design</string>
 
 
@@ -8,6 +8,7 @@
     <string name="btn_logueo_Ingresar_String">Ingresar</string>
     <string name="btn_logueo_CrearCuenta_String">Crear Cuenta</string>
     <string name="btn_logueo_IngresarComoInvitado_String">Ingresar como Invitado</string>
+    <string name="et_logueo_nickInvitado_String">Nick Invitado</string>
 
     //String de activity "invitado"
     <string name="et_invitado_nickName_String">Nick Name</string>
@@ -20,14 +21,14 @@
     <string name="et_crearcuenta_mail_String">mail</string>
     <string name="et_crearcuenta_password_String">password</string>
     <string name="et_crearcuenta_confirmarpassword_String">confirmar password</string>
-    <string name="et_crearcuenta_nickname_String">NickName</string>
-    <string name="et_crearcuenta_profesionoficio_String">Profesion u Oficio</string>
+    <string name="et_crearcuenta_nickUsuario_String">Nick Usuario</string>
+    <string name="et_crearcuenta_profesionoficio_String" tools:ignore="Typos">Profesion u Oficio</string>
     <string name="btn_crearcuenta_registrar_String">Registrar</string>
 
     // Strings de activity "inicio"
-    <string name="tv_nuevo_String">Nuevo</string>
-    <string name="tv_administrarDatos_String">Administrar Datos</string>
-    <string name="tv_proyectosComunidad_String">Proyectos de la Comunidad</string>
+    <string name="btn_inicio_nuevo_String">Nuevo</string>
+    <string name="btn_inicio_administrarDatos_String">Administrar Datos</string>
+    <string name="btn_inicio_proyectosComunidad_String">Proyectos de la Comunidad</string>
 
     //Strings de activity "nuevo"
     <string name="btn_nuevo_proyecto_String">Nuevo Proyecto</string>
@@ -37,6 +38,9 @@
     <string name="btn_nuevo_transportador_String">Nuevo Transportador</string>
     <string name="btn_nueva_helice_String">Nueva Helice</string>
     <string name="btn_nuevo_tubo_String">Nuevo Tubo</string>
+
+    //Strings de activity "nuevo proyecto"
+    <string name="et_nuevoProyecto_nombreProyecto_String">Ingrese el nombre del proyecto</string>
 
     //Strings de activity "nuevo material"
     <string name="tv_nombreMaterial_String">Nombre Material</string>
@@ -50,6 +54,15 @@
     <string name="tv_fluidez_String">Fluidez</string>
     <string name="tv_tipoMaterial_String">Tipo de material</string>
     <string name="tv_categoriaPeso_String">Categoria de peso</string>
+
+    //Strings de activity "proyectos de la comunidad"
+    <string name="et_proyectosComunidad_buscadorWeb_String">Ingrese la busqueda</string>
+    <string name="btn_proyectosComunidad_buscadorWeb_String">Buscar</string>
+
+    //Strings de activity "Administrar Datos"
+    <string name="btn_adminDatos_adminDatosUsuario_String">Administrar Datos de Usuario</string>
+    <string name="btn_adminDatos_adminProyectosGuardados_String">Administrar Proyectos Guardados</string>
+    <string name="btn_adminDatos_adminProyectoActual_String">Administrar Proyecto Actual</string>
 
 
 </resources>

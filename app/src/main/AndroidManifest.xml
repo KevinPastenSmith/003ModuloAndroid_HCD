@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design">
-        <activity android:name=".Nuevo_Proyecto"></activity>
+        <activity android:name=".AdministrarProyectosGuardados"></activity>
+        <activity android:name=".AdministrarDatosUsuario" />
+        <activity android:name=".AdministrarDatos" />
+        <activity android:name=".ProyectosComunidad" />
+        <activity android:name=".Nuevo_Proyecto" />
         <activity android:name=".Logueo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

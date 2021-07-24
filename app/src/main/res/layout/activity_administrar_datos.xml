@@ -4,42 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Inicio">
+    tools:context=".AdministrarDatos">
 
     <Button
-        android:id="@+id/btn_inicio_nuevo"
-        android:layout_width="300dp"
+        android:id="@+id/btn_adminDatos_adminDatosUsuario"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="btn_nuevo"
-        android:text="@string/btn_inicio_nuevo_String"
-        app:layout_constraintBottom_toTopOf="@+id/btn_inicio_administrarProyectos"
+        android:onClick="btn_administrarDatosUsuario"
+        android:text="@string/btn_adminDatos_adminDatosUsuario_String"
+        app:layout_constraintBottom_toTopOf="@+id/btn_adminDatos_adminProyectGuardados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_inicio_administrarProyectos"
-        android:layout_width="300dp"
+        android:id="@+id/btn_adminDatos_adminProyectGuardados"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="btn_administrarDatos"
-        android:text="@string/btn_inicio_administrarDatos_String"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_inicio_proyectosComunidad"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:onClick="btn_proyectosComunidad"
-        android:text="@string/btn_inicio_proyectosComunidad_String"
+        android:onClick="btn_administrarProyectosGuardados"
+        android:text="@string/btn_adminDatos_adminProyectosGuardados_String"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_inicio_administrarProyectos" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_adminDatos_adminProyectActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_adminDatos_adminProyectoActual_String"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_adminDatos_adminProyectGuardados" />
 </androidx.constraintlayout.widget.ConstraintLayout>

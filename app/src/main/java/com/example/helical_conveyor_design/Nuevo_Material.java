@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Nuevo_Material extends AppCompatActivity {
 
-    private TextView tv1_nombreMaterial, tv2_selecTipoMezcla, tv3_ClasificacionMaterial, tv4_densidad, tv5_abrasividad, tv6_fluidez, tv7_tipoMaterial, tv8_categoriaPeso;
+    private TextView  tv2_selecTipoMezcla, tv3_ClasificacionMaterial, tv4_densidad, tv5_abrasividad, tv6_fluidez, tv7_tipoMaterial, tv8_categoriaPeso;
     private EditText et1_nombreMterial;
     private RadioButton rb1_homogenea, rb2_heterogenea;
     private Spinner spinner1_clasificacionmaterial;
@@ -23,7 +23,6 @@ public class Nuevo_Material extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nuevo_material);
 
-        tv1_nombreMaterial = (TextView) findViewById(R.id.tv_nuevo_material_nombreMaterial);
         tv2_selecTipoMezcla = (TextView) findViewById(R.id.tv_nuevo_material_selecTipoMezcla);
         tv3_ClasificacionMaterial = (TextView) findViewById(R.id.tv_ClasificacionMaterial);
         tv4_densidad = (TextView) findViewById(R.id.tv_densidad);

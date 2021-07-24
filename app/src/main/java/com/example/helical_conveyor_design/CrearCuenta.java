@@ -21,7 +21,7 @@ public class CrearCuenta extends AppCompatActivity {
         et1_creacuenta_mail = (EditText) findViewById(R.id.et_crearcuenta_mail);
         et2_crearcuenta_password = (EditText) findViewById(R.id.et_crearcuenta_password);
         et3_crearcuenta_password2 = (EditText) findViewById(R.id.et_crearcuenta_password2);
-        et4_creacuente_nickName = (EditText) findViewById(R.id.et_crearcuenta_nickname);
+        et4_creacuente_nickName = (EditText) findViewById(R.id.et_crearCuenta_nickUsuario);
         et5_crearcuenta_profesionOficio = (EditText) findViewById(R.id.et_crearcuenta_profesionoficio);
 
         btn1_crearcuenta_registrar = (Button) findViewById(R.id.btn_crearcuenta_registrar);

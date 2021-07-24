@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Nuevo_Proyecto">
 
+    <EditText
+        android:id="@+id/et_nuevoProyecto_nombreProyecto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/et_nuevoProyecto_nombreProyecto_String"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

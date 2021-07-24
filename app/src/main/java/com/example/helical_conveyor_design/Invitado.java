@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class Invitado extends AppCompatActivity {
 
-    private EditText et1_invitado_nickName;
+
     private TextView tv1_invitado_hola;
     private Button btn1_invitado_nuevo,btn2_invitado_adminProyectActual;
 
@@ -21,15 +21,17 @@ public class Invitado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_invitado);
 
-        et1_invitado_nickName = (EditText) findViewById(R.id.et_invitado_nickname);
         tv1_invitado_hola = (TextView) findViewById(R.id.tv_invitado_holainvitado);
         btn1_invitado_nuevo = (Button) findViewById(R.id.btn_invitado_nuevo);
         btn2_invitado_adminProyectActual = (Button) findViewById(R.id.btn_invitado_adminproyectactual);
 
+        String nickInvitado = getIntent().getStringExtra("nickInvitadoLogueo");
+        tv1_invitado_hola.setText("Hola "+nickInvitado);
+
     }
 
     //Metodo button "nuevo"
-    public void btn_nuevo (View view){
+    public void btnNuevo (View view){
 
         Intent nuevo = new Intent(this,Nuevo.class);
         startActivity(nuevo);
