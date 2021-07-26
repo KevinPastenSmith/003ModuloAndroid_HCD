@@ -9,6 +9,8 @@
     <string name="btn_logueo_CrearCuenta_String">Crear Cuenta</string>
     <string name="btn_logueo_IngresarComoInvitado_String">Ingresar como Invitado</string>
     <string name="et_logueo_nickInvitado_String">Nick Invitado</string>
+    <string name="toast_logueo_noCuenta_String">Tu mail no ha sido registrado</string>
+
 
     //String de activity "invitado"
     <string name="et_invitado_nickName_String">Nick Name</string>
@@ -24,6 +26,8 @@
     <string name="et_crearcuenta_nickUsuario_String">Nick Usuario</string>
     <string name="et_crearcuenta_profesionoficio_String" tools:ignore="Typos">Profesion u Oficio</string>
     <string name="btn_crearcuenta_registrar_String">Registrar</string>
+    <string name="toast_cuentaCreada">Su cuenta ha sido registrada</string>
+    <string name="toast_rellenarCampos">Debe rellenar todos los campos antes de crear una cuenta</string>
 
     // Strings de activity "inicio"
     <string name="btn_inicio_nuevo_String">Nuevo</string>

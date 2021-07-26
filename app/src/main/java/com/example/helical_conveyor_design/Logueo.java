@@ -49,25 +49,43 @@ public class Logueo extends AppCompatActivity {
         invitado.putExtra("nickInvitadoLogueo",et3_logueo_nickInvitado.getText().toString());
         startActivity(invitado);
 
+
+
     }
 
     //Metodo ingresar
 
-    public void ingresar (View view){
+    public void btn_ingresar (View view){
 
-        String mail = et1_logueo_mail.getText().toString();
-        String password = et2_logueo_password.getText().toString();
+        String mailLogueo = et1_logueo_mail.getText().toString();
+        String passwordLogueo = et2_logueo_password.getText().toString();
 
-        if(mail.length()==0){
+        SharedPreferences logueo = getSharedPreferences("password" , Context.MODE_PRIVATE);
+        String passwordPreferencia = logueo.getString(mailLogueo, "");
+
+
+        if (passwordPreferencia.length()==0){
+            Toast.makeText(this,getString(R.string.toast_logueo_noCuenta_String),Toast.LENGTH_LONG).show();
+        }
+        if(mailLogueo.length()==0){
             Toast.makeText(this,"debes ingresar un mail", Toast.LENGTH_LONG).show();
         }
-        if(password.length()==0){
+        if(passwordLogueo.length()==0){
             Toast.makeText(this,"debes ingresar una password", Toast.LENGTH_LONG).show();
         }
-        if(mail.length()!=0 && password.length()!=0){
-            Toast.makeText(this,"Ingresando...", Toast.LENGTH_LONG).show();
+        if(mailLogueo.length()!=0 && passwordLogueo.length()!=0 && passwordPreferencia.length()!=0 && passwordPreferencia == passwordLogueo){
+            Toast.makeText(this,"Ingresando...", Toast.LENGTH_SHORT).show();
+
+            Intent ingresarIntent = new Intent(this,Inicio.class);
+            startActivity(ingresarIntent);
         }
 
+    }
+
+    //Metodo crear cuenta
+    public void btn_crearCuenta (View view){
+        Intent nuevaCuenta = new Intent(this, CrearCuenta.class);
+        startActivity(nuevaCuenta);
     }
 
 }
