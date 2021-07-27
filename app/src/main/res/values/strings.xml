@@ -67,6 +67,8 @@
     <string name="btn_adminDatos_adminDatosUsuario_String">Administrar Datos de Usuario</string>
     <string name="btn_adminDatos_adminProyectosGuardados_String">Administrar Proyectos Guardados</string>
     <string name="btn_adminDatos_adminProyectoActual_String">Administrar Proyecto Actual</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

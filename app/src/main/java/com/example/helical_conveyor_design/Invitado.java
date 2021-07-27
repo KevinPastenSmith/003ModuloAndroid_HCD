@@ -1,9 +1,11 @@
 package com.example.helical_conveyor_design;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.SurfaceControl;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +16,8 @@ public class Invitado extends AppCompatActivity {
 
     private TextView tv1_invitado_hola;
     private Button btn1_invitado_nuevo,btn2_invitado_adminProyectActual;
-
+    FragmentNuevo fragment_invitado_nuevo;
+    FragmentAdministrarProyectoActual fragment_invitado_administrarProyectActual;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +28,32 @@ public class Invitado extends AppCompatActivity {
         btn1_invitado_nuevo = (Button) findViewById(R.id.btn_invitado_nuevo);
         btn2_invitado_adminProyectActual = (Button) findViewById(R.id.btn_invitado_adminproyectactual);
 
+        fragment_invitado_nuevo = new FragmentNuevo();
+        fragment_invitado_administrarProyectActual = new FragmentAdministrarProyectoActual();
+
+        getSupportFragmentManager().beginTransaction().add(R.id.contenedorInvitado, fragment_invitado_nuevo).commit();
+
         String nickInvitado = getIntent().getStringExtra("nickInvitadoLogueo");
         tv1_invitado_hola.setText("Hola "+nickInvitado);
 
+
     }
 
-    //Metodo button "nuevo"
-    public void btnNuevo (View view){
+    public void onClick(View view) {
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
-        Intent nuevo = new Intent(this,Nuevo.class);
-        startActivity(nuevo);
+        switch (view.getId()){
+
+            case R.id.btn_invitado_nuevo:
+                fragmentTransaction.replace(R.id.contenedorInvitado, fragment_invitado_nuevo);
+                break;
+            case R.id.btn_invitado_adminproyectactual:
+                fragmentTransaction.replace(R.id.contenedorInvitado, fragment_invitado_administrarProyectActual);
+                break;
+
+        }
+
+        fragmentTransaction.commit();
+
     }
-
-
 }

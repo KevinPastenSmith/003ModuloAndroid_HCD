@@ -6,40 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".Inicio">
 
-    <Button
-        android:id="@+id/btn_inicio_nuevo"
-        android:layout_width="300dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="btn_nuevo"
-        android:text="@string/btn_inicio_nuevo_String"
-        app:layout_constraintBottom_toTopOf="@+id/btn_inicio_administrarProyectos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/btn_inicio_administrarProyectos"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:onClick="btn_administrarDatos"
-        android:text="@string/btn_inicio_administrarDatos_String"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btn_inicio_nuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn_nuevo"
+            android:text="@string/btn_inicio_nuevo_String"
+            app:layout_constraintBottom_toTopOf="@+id/btn_inicio_administrarProyectos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_inicio_administrarProyectos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="btn_administrarDatos"
+            android:text="@string/btn_inicio_administrarDatos_String"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_inicio_proyectosComunidad"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="btn_proyectosComunidad"
         android:text="@string/btn_inicio_proyectosComunidad_String"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_inicio_administrarProyectos" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <FrameLayout
+        android:id="@+id/frameContenido"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inicio_proyectosComunidad"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_height="match_parent"></FrameLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

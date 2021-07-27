@@ -12,10 +12,22 @@ public class Inicio extends AppCompatActivity {
 
     private TextView btn1_inicio_nuevo, btn2_inicio_administrarDatos, btn3_inicio_proyectosComunidad;
 
+    FragmentNuevo fragmentNuevo;
+    FragmentAdministrarDatos fragmentAdministrarDatos;
+    FragmentProyectosComunidad fragmentProyectosComunidad;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
+
+        fragmentNuevo = new FragmentNuevo();
+        fragmentAdministrarDatos = new FragmentAdministrarDatos();
+        fragmentProyectosComunidad = new FragmentProyectosComunidad();
+
+        getSupportFragmentManager().beginTransaction().add(R.id.frameContenido, fragmentNuevo).commit();
+
+
 
         btn1_inicio_nuevo = (Button) findViewById(R.id.btn_inicio_nuevo);
         btn2_inicio_administrarDatos = (Button) findViewById(R.id.btn_inicio_administrarProyectos);
@@ -26,7 +38,7 @@ public class Inicio extends AppCompatActivity {
     //Metodo button "nuevo"
     public void btn_nuevo (View view){
 
-        Intent nuevo = new Intent(this,Nuevo.class);
+        Intent nuevo = new Intent(this,FragmentNuevo.class);
         startActivity(nuevo);
     }
 

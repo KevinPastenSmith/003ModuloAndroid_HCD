@@ -25,7 +25,6 @@
         <activity android:name=".CrearCuenta" />
         <activity android:name=".Inicio" />
         <activity android:name=".Nuevo_Material" />
-        <activity android:name=".Nuevo" />
     </application>
 
 </manifest>

@@ -8,9 +8,9 @@
 
     <TextView
         android:id="@+id/tv_invitado_holainvitado"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
         android:hint="@string/tv_invitado_HolaInvitado_String"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,24 +18,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_invitado_nuevo"
-        android:layout_width="300dp"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:onClick="btnNuevo"
-        android:text="@string/btn_invitado_nuevo_String"
+        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_invitado_holainvitado" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_invitado_holainvitado"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/btn_invitado_adminproyectactual"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="@string/btn_invitado_adminProyectActual"
+        <Button
+            android:id="@+id/btn_invitado_nuevo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/btn_invitado_nuevo_String"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <Button
+            android:id="@+id/btn_invitado_adminproyectactual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="@string/btn_invitado_adminProyectActual"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="293dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/contenedorInvitado"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_invitado_nuevo" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
