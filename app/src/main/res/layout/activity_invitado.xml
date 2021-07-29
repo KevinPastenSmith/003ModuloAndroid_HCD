@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context=".Invitado">
 
     <TextView
@@ -11,53 +11,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:hint="@string/tv_invitado_HolaInvitado_String"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/tv_invitado_HolaInvitado_String"
+        android:textSize="20sp" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linear_layout_invitado"
+        android:layout_below="@id/tv_invitado_holainvitado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_invitado_holainvitado"
-        tools:ignore="MissingConstraints">
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/btn_invitado_nuevo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="onClick"
             android:text="@string/btn_invitado_nuevo_String"
-            tools:layout_editor_absoluteX="55dp"
-            tools:layout_editor_absoluteY="133dp" />
+           />
 
         <Button
             android:id="@+id/btn_invitado_adminproyectactual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="onClick"
             android:text="@string/btn_invitado_adminProyectActual"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="293dp" />
+            />
 
     </LinearLayout>
 
     <FrameLayout
         android:id="@+id/contenedorInvitado"
         android:layout_width="match_parent"
-        android:layout_height="520dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"></FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_layout_invitado">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

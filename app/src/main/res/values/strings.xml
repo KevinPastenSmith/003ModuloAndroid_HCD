@@ -33,8 +33,10 @@
     <string name="btn_inicio_nuevo_String">Nuevo</string>
     <string name="btn_inicio_administrarDatos_String">Administrar Datos</string>
     <string name="btn_inicio_proyectosComunidad_String">Proyectos de la Comunidad</string>
+    <string name="tv_Bienvenido">Bienvenido</string>
 
-    //Strings de activity "nuevo"
+
+    //Strings del fragment "nuevo"
     <string name="btn_nuevo_proyecto_String">Nuevo Proyecto</string>
     <string name="btn_nuevo_sistemaHelicoidal_String">Nuevo Sistema de Transporte Helicoidal</string>
     <string name="btn_nuevo_material_String">Nuevo Material</string>
@@ -42,6 +44,17 @@
     <string name="btn_nuevo_transportador_String">Nuevo Transportador</string>
     <string name="btn_nueva_helice_String">Nueva Helice</string>
     <string name="btn_nuevo_tubo_String">Nuevo Tubo</string>
+    <string name="tv_nuevo">Nuevo</string>
+
+    //Strings del fragment "administrar proyecto actual"
+    <string name="tv_administrar_proyectoactual_String">Administrar Proyecto Actual</string>
+    <string name="btn_adminPoryectoActual_sistemaHelicoidal_String">Administrar Sistema de Transporte Helicoidal</string>
+    <string name="btn_adminPoryectoActual_material_String">Administrar Material</string>
+    <string name="btn_adminPoryectoActual_motor_String">Administrar Motor</string>
+    <string name="btn_adminPoryectoActual_transportador_String">Administrar Transportador</string>
+    <string name="btn_adminPoryectoActual_helice_String">Administrar Helice</string>
+    <string name="btn_adminPoryectoActual_tubo_String">Administrar Tubo</string>
+
 
     //Strings de activity "nuevo proyecto"
     <string name="et_nuevoProyecto_nombreProyecto_String">Ingrese el nombre del proyecto</string>

@@ -1,63 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context=".Inicio">
 
+    <TextView
+        android:id="@+id/tv_inicio_bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tv_Bienvenido"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="8dp"/>
+
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linear_inicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+        android:layout_below="@id/tv_inicio_bienvenido"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
 
         <Button
             android:id="@+id/btn_inicio_nuevo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:onClick="btn_nuevo"
             android:text="@string/btn_inicio_nuevo_String"
-            app:layout_constraintBottom_toTopOf="@+id/btn_inicio_administrarProyectos"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_weight="1"
+            />
 
         <Button
             android:id="@+id/btn_inicio_administrarProyectos"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:onClick="btn_administrarDatos"
             android:text="@string/btn_inicio_administrarDatos_String"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_weight="1.2"
+            />
+
+        <Button
+            android:id="@+id/btn_inicio_proyectosComunidad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="btn_proyectosComunidad"
+            android:text="@string/btn_inicio_proyectosComunidad_String"
+            android:layout_weight="1"
+            />
+
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_inicio_proyectosComunidad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="btn_proyectosComunidad"
-        android:text="@string/btn_inicio_proyectosComunidad_String"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <FrameLayout
         android:id="@+id/frameContenido"
         android:layout_width="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_inicio_proyectosComunidad"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_inicio">
 
+    </FrameLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
