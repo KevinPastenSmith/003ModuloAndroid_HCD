@@ -42,7 +42,7 @@
     </LinearLayout>
 
     <FrameLayout
-        android:id="@+id/contenedorInvitado"
+        android:id="@+id/framelayout_invitado"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/linear_layout_invitado">

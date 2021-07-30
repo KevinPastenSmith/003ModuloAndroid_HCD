@@ -45,6 +45,14 @@
     <string name="btn_nueva_helice_String">Nueva Helice</string>
     <string name="btn_nuevo_tubo_String">Nuevo Tubo</string>
     <string name="tv_nuevo">Nuevo</string>
+    <string name="descripcion_nuevo_proyecto_String">NuevoProyecto</string>
+    <string name="descripcion_nuevo_sistemaHelicoidal_String">NuevoSistemaHelicoidal</string>
+    <string name="descripcion_nuevo_material_String">NuevoMaterial</string>
+    <string name="descripcion_nuevo_motor_String">NuevoMotor</string>
+    <string name="descripcion_nuevo_transportador_String">NuevoTransportador</string>
+    <string name="descripcion_nuevo_helice_String">NuevaHelice</string>
+    <string name="descripcion_nuevo_tubo_String">NuevoTubo</string>
+
 
     //Strings del fragment "administrar proyecto actual"
     <string name="tv_administrar_proyectoactual_String">Administrar Proyecto Actual</string>
@@ -71,6 +79,14 @@
     <string name="tv_fluidez_String">Fluidez</string>
     <string name="tv_tipoMaterial_String">Tipo de material</string>
     <string name="tv_categoriaPeso_String">Categoria de peso</string>
+
+    //Strings de activity "nueva helice"
+    <string name="tv_nuevaHelice_strings">Nueva Helice</string>
+    <string name="et_nuevaHelice_strings">Introduzca el nombre de la helice</string>
+
+    //Strings de activity "Administrar proyectos Guardados"
+    <string name="tv_administrarProyectosGuardados_strings">Proyectos Guardados</string>
+
 
     //Strings de activity "proyectos de la comunidad"
     <string name="et_proyectosComunidad_buscadorWeb_String">Ingrese la busqueda</string>

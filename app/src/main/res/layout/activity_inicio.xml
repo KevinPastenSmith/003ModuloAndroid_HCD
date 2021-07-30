@@ -30,7 +30,7 @@
             android:id="@+id/btn_inicio_nuevo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="btn_nuevo"
+            android:onClick="onClick"
             android:text="@string/btn_inicio_nuevo_String"
             android:layout_weight="1"
             />
@@ -39,7 +39,7 @@
             android:id="@+id/btn_inicio_administrarProyectos"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="btn_administrarDatos"
+            android:onClick="onClick"
             android:text="@string/btn_inicio_administrarDatos_String"
             android:layout_weight="1.2"
             />
@@ -48,7 +48,7 @@
             android:id="@+id/btn_inicio_proyectosComunidad"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:onClick="btn_proyectosComunidad"
+            android:onClick="onClick"
             android:text="@string/btn_inicio_proyectosComunidad_String"
             android:layout_weight="1"
             />
@@ -58,7 +58,7 @@
 
 
     <FrameLayout
-        android:id="@+id/frameContenido"
+        android:id="@+id/framelayout_Inicio"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/linear_inicio">

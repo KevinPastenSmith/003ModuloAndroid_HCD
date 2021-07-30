@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevaHelice"
+    android:background="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/tv_nuevahelice_nombrehelice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_nuevaHelice_strings"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_nuevahelice_nombrehelice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nuevahelice_nombrehelice"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/et_nuevaHelice_strings"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_nuevahelice_nombrehelice"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

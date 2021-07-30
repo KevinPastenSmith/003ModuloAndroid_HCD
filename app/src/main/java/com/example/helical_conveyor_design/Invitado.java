@@ -31,7 +31,7 @@ public class Invitado extends AppCompatActivity {
         fragment_invitado_nuevo = new FragmentNuevo();
         fragment_invitado_administrarProyectActual = new FragmentAdministrarProyectoActual();
 
-        getSupportFragmentManager().beginTransaction().add(R.id.contenedorInvitado, fragment_invitado_nuevo).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.framelayout_invitado, fragment_invitado_nuevo).commit();
 
         String nickInvitado = getIntent().getStringExtra("nickInvitadoLogueo");
         tv1_invitado_hola.setText("Hola "+nickInvitado);
@@ -40,15 +40,16 @@ public class Invitado extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
         switch (view.getId()){
 
             case R.id.btn_invitado_nuevo:
-                fragmentTransaction.replace(R.id.contenedorInvitado, fragment_invitado_nuevo);
+                fragmentTransaction.replace(R.id.framelayout_invitado, fragment_invitado_nuevo);
                 break;
             case R.id.btn_invitado_adminproyectactual:
-                fragmentTransaction.replace(R.id.contenedorInvitado, fragment_invitado_administrarProyectActual);
+                fragmentTransaction.replace(R.id.framelayout_invitado, fragment_invitado_administrarProyectActual);
                 break;
 
         }

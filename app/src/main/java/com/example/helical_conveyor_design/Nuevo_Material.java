@@ -3,12 +3,17 @@ package com.example.helical_conveyor_design;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
 
 public class Nuevo_Material extends AppCompatActivity {
 
@@ -40,10 +45,27 @@ public class Nuevo_Material extends AppCompatActivity {
 
         spinner1_clasificacionmaterial = (Spinner) findViewById(R.id.sp_clasificacionMaterial);
 
-       String [] clasificacionMaterial = {"clasificacion 1", "clasificacion 2", "clasificacion 3", "clasificacion 4", "clasificacion 5"};
+        ArrayList<String> clasificacionesList = new ArrayList<String>();
+        clasificacionesList.add("Seleccione Clasificacion");
+        for (int i=1; i<=5;i++) {
+            clasificacionesList.add("Clasificaion "+i);
+        }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.spinner_nuevomaterial_clasificacionmaterial, clasificacionMaterial);
+        ArrayAdapter<CharSequence> adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, clasificacionesList);
         spinner1_clasificacionmaterial.setAdapter(adapter);
+
+        spinner1_clasificacionmaterial.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(parent.getContext(),"Seleccionado: "+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
 
 
 

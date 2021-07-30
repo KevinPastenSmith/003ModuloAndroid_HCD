@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //Spinner para clasificacion de material
+    <string-array name="spinner_clasificacion_material">
+        <item>Seleccione Clasificacion</item>
+        <item>Clasificacion 1</item>
+        <item>Clasificacion 2</item>
+        <item>Clasificacion 3</item>
+        <item>Clasificacion 4</item>
+        <item>Clasificacion 5</item>
+    </string-array>
+
+</resources>
