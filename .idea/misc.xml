@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout-land/fragment_nuevo.xml" value="0.35735735735735735" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_administrar_datos.xml" value="0.2375" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_administrar_datos_usuario.xml" value="0.1" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_administrar_proyectos_guardados.xml" value="0.2375" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_inicio.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_invitado.xml" value="0.23541666666666666" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_nueva_helice.xml" value="0.21851851851851853" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_nuevo_material.xml" value="0.2375" />
-        <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/fragment_administrar_datos.xml" value="0.2375" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/fragment_administrar_datos.xml" value="0.25" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/fragment_administrar_proyecto_actual.xml" value="0.25" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/fragment_nuevo.xml" value="0.33" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/fragment_proyectos_comunidad.xml" value="0.26458333333333334" />
       </map>
     </option>
   </component>

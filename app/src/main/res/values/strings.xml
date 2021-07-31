@@ -84,6 +84,13 @@
     <string name="tv_nuevaHelice_strings">Nueva Helice</string>
     <string name="et_nuevaHelice_strings">Introduzca el nombre de la helice</string>
 
+    //Strings de fragment "Administrar Datos"
+    <string name="tv_administrardatos_Strings">Administrar Datos</string>
+    <string name="btn_administrarDatosUsuario_String">Administrar Datos de Usuario</string>
+    <string name="btn_administrarProyectosGuardados_String">Administrar Proyectos Guardados</string>
+    <string name="btn_administrarProyectoActual_String">Administrar Proyecto Actual</string>
+
+
     //Strings de activity "Administrar proyectos Guardados"
     <string name="tv_administrarProyectosGuardados_strings">Proyectos Guardados</string>
 
@@ -91,13 +98,6 @@
     //Strings de activity "proyectos de la comunidad"
     <string name="et_proyectosComunidad_buscadorWeb_String">Ingrese la busqueda</string>
     <string name="btn_proyectosComunidad_buscadorWeb_String">Buscar</string>
-
-    //Strings de activity "Administrar Datos"
-    <string name="btn_adminDatos_adminDatosUsuario_String">Administrar Datos de Usuario</string>
-    <string name="btn_adminDatos_adminProyectosGuardados_String">Administrar Proyectos Guardados</string>
-    <string name="btn_adminDatos_adminProyectoActual_String">Administrar Proyecto Actual</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

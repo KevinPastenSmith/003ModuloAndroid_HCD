@@ -63,6 +63,9 @@ public class Logueo extends AppCompatActivity {
         SharedPreferences logueo = getSharedPreferences("password" , Context.MODE_PRIVATE);
         String passwordPreferencia = logueo.getString(mailLogueo, "");
 
+        Intent ingresarIntent = new Intent(this,Inicio.class);
+        startActivity(ingresarIntent);
+
 /*
         if (passwordPreferencia.length()==0){
             Toast.makeText(this,getString(R.string.toast_logueo_noCuenta_String),Toast.LENGTH_LONG).show();
@@ -74,14 +77,14 @@ public class Logueo extends AppCompatActivity {
             Toast.makeText(this,"debes ingresar una password", Toast.LENGTH_LONG).show();
         }
 
- */
+
         if(mailLogueo.length()!=0 && passwordLogueo.length()!=0){
             Toast.makeText(this,"Ingresando...", Toast.LENGTH_SHORT).show();
 
             Intent ingresarIntent = new Intent(this,Inicio.class);
             startActivity(ingresarIntent);
         }
-
+*/
     }
 
     //Metodo crear cuenta

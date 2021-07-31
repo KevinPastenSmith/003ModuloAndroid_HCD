@@ -14,7 +14,6 @@
             android:exported="true" />
         <activity android:name=".AdministrarProyectosGuardados" />
         <activity android:name=".AdministrarDatosUsuario" />
-        <activity android:name=".AdministrarDatos" />
         <activity android:name=".ProyectosComunidad" />
         <activity android:name=".Nuevo_Proyecto" />
         <activity android:name=".Logueo">
