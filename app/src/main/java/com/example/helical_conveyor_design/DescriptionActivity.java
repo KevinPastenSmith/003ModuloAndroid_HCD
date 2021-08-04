@@ -12,6 +12,8 @@ public class DescriptionActivity extends AppCompatActivity {
 
     TextView nombreProyectoDescriptionTextView, mailUsuarioDescriptionTextView;
 
+//cambio de prueba
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
