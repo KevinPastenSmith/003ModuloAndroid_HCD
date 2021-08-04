@@ -1,6 +1,8 @@
 package com.example.helical_conveyor_design.model;
 
-public class RecyclerProyectosComunidad {
+import java.io.Serializable;
+
+public class RecyclerProyectosComunidad implements Serializable {
 
     public String nombreProyecto, mailUsuario, color;
 

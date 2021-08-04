@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionActivity">
+
+    <TextView
+        android:id="@+id/nombreProyectoDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_margin="16dp"
+        android:text="Descripcion"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/nickDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreProyectoDescriptionTextView"
+        android:layout_marginStart="16dp"
+        android:layout_margin="16dp"
+        android:text="Descripcion2"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/mailUsuarioDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nickDescriptionTextView"
+        android:layout_marginStart="16dp"
+        android:layout_margin="16dp"
+        android:text="Descripcion3"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        />
+
+
+
+</RelativeLayout>
