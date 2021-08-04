@@ -22,11 +22,17 @@ public class RecyclerProyectosComunidadAdapter extends RecyclerView.Adapter<Recy
     private List<RecyclerProyectosComunidad> mData;
     private LayoutInflater mInflater;
     private Context context;
+    final RecyclerProyectosComunidadAdapter.OnItemClickListener listener;
 
-    public RecyclerProyectosComunidadAdapter (List<RecyclerProyectosComunidad> itemList, Context context){
+    public interface OnItemClickListener {
+        void onItemClick(RecyclerProyectosComunidad item);
+    }
+
+    public RecyclerProyectosComunidadAdapter (List<RecyclerProyectosComunidad> itemList, Context context, RecyclerProyectosComunidadAdapter.OnItemClickListener listener){
         this.mInflater = LayoutInflater.from(context);
         this.context = context;
         this.mData = itemList;
+        this.listener = listener;
     }
 
     @Override
@@ -46,7 +52,7 @@ public class RecyclerProyectosComunidadAdapter extends RecyclerView.Adapter<Recy
     public void setItems(List<RecyclerProyectosComunidad> items){mData=items;}
 
 
-    public static class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView iconImage;
         TextView nombreProyecto, mailUsuario;
 
@@ -61,6 +67,12 @@ public class RecyclerProyectosComunidadAdapter extends RecyclerView.Adapter<Recy
             iconImage.setColorFilter(Color.parseColor(item.getColor()),PorterDuff.Mode.SRC_IN);
             nombreProyecto.setText(item.getNombreProyecto());
             mailUsuario.setText(item.getMailUsuario());
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onItemClick(item);
+                }
+            });
         }
 
    

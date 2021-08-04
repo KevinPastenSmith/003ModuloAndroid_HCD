@@ -1,5 +1,6 @@
 package com.example.helical_conveyor_design;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -47,10 +48,23 @@ public class FragmentProyectosComunidad extends Fragment {
             elements.add(new RecyclerProyectosComunidad("Proyecto Generico "+i,"mailgenerico."+i+"@gmail.com", "#775447"));
         }
 
-        RecyclerProyectosComunidadAdapter listAdapter = new RecyclerProyectosComunidadAdapter(elements,getContext());
+        RecyclerProyectosComunidadAdapter listAdapter = new RecyclerProyectosComunidadAdapter(elements, getContext(), new RecyclerProyectosComunidadAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(RecyclerProyectosComunidad item) {
+                moveToDescription(item);
+            }
+        });
         RecyclerView recyclerView = vista.findViewById(R.id.recyclerview_proyectosComunidad);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(listAdapter);
     }
+
+    private void moveToDescription(RecyclerProyectosComunidad item) {
+        Intent intent = new Intent(getContext(),DescriptionActivity.class);
+        intent.putExtra("RecyclerProyectosComunidad",item);
+        startActivity(intent);
+    }
+
+
 }
