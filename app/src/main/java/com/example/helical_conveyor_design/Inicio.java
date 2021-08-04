@@ -10,11 +10,12 @@ import android.widget.TextView;
 
 public class Inicio extends AppCompatActivity implements View.OnClickListener{
 
-    private TextView btn1_inicio_nuevo, btn2_inicio_administrarDatos, btn3_inicio_proyectosComunidad;
+    private Button btn1_inicio_nuevo, btn2_inicio_administrarDatos, btn3_inicio_proyectosComunidad;
 
     FragmentNuevo fragment_inicio_nuevo;
-    FragmentAdministrarDatos fragment_inicio_AdministrarDatos;
-    FragmentProyectosComunidad fragment_inicio_ProyectosComunidad;
+    FragmentAdministrarDatos fragment_inicio_administrarDatos;
+    FragmentProyectosComunidad fragment_inicio_proyectosComunidad;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +23,9 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_inicio);
 
         fragment_inicio_nuevo = new FragmentNuevo();
-        fragment_inicio_AdministrarDatos = new FragmentAdministrarDatos();
-        fragment_inicio_ProyectosComunidad = new FragmentProyectosComunidad();
+        fragment_inicio_administrarDatos = new FragmentAdministrarDatos();
+        fragment_inicio_proyectosComunidad = new FragmentProyectosComunidad();
+
 
         getSupportFragmentManager().beginTransaction().add(R.id.framelayout_Inicio, fragment_inicio_nuevo).commit();
 
@@ -49,12 +51,11 @@ public class Inicio extends AppCompatActivity implements View.OnClickListener{
                 fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_nuevo);
                 break;
             case R.id.btn_inicio_administrarProyectos:
-                fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_AdministrarDatos);
+                fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_administrarDatos);
                 break;
             case R.id.btn_inicio_proyectosComunidad:
-                fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_ProyectosComunidad);
+                fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_proyectosComunidad);
                 break;
-
         }
 
         fragmentTransaction.commit();

@@ -10,16 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design" >
         <activity
-            android:name=".fragment_proyectoscomunidad"
-            android:exported="true"
-            android:label="@string/title_activity_fragment_proyectoscomunidad"
-            android:theme="@style/Theme.Helical_Conveyor_Design.NoActionBar" />
-        <activity
             android:name=".NuevaHelice"
             android:exported="true" />
         <activity android:name=".AdministrarProyectosGuardados" />
         <activity android:name=".AdministrarDatosUsuario" />
-        <activity android:name=".ProyectosComunidad" />
         <activity android:name=".Nuevo_Proyecto" />
         <activity android:name=".Logueo" >
             <intent-filter>

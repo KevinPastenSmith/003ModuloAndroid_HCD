@@ -9,6 +9,7 @@
     tools:context=".AdministrarProyectosGuardados"
     android:padding="16dp">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
             android:textStyle="bold"/>
 
         <ListView
-            android:id="@+id/lv_proyectosguardados"
+            android:id="@+id/lv_proyectos_guardados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"

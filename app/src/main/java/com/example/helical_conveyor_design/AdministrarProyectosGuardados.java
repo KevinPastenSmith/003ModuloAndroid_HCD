@@ -23,7 +23,7 @@ public class AdministrarProyectosGuardados extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_administrar_proyectos_guardados);
 
-        listViewProyectosGuardados = (ListView) findViewById(R.id.lv_proyectosguardados);
+        listViewProyectosGuardados = (ListView) findViewById(R.id.lv_proyectos_guardados);
 
         ArrayList<String> listaProyectosGuardados = new ArrayList<>();
         listaProyectosGuardados.add("Proyecto separador de solidos");
