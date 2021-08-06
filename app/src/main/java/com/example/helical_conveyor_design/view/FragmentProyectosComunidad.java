@@ -1,4 +1,4 @@
-package com.example.helical_conveyor_design;
+package com.example.helical_conveyor_design.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.helical_conveyor_design.R;
 import com.example.helical_conveyor_design.model.RecyclerProyectosComunidad;
+import com.example.helical_conveyor_design.view.DescriptionActivity;
 import com.example.helical_conveyor_design.viewmodel.RecyclerProyectosComunidadAdapter;
 
 import java.util.ArrayList;
@@ -61,7 +63,7 @@ public class FragmentProyectosComunidad extends Fragment {
     }
 
     private void moveToDescription(RecyclerProyectosComunidad item) {
-        Intent intent = new Intent(getContext(),DescriptionActivity.class);
+        Intent intent = new Intent(getContext(), DescriptionActivity.class);
         intent.putExtra("RecyclerProyectosComunidad",item);
         startActivity(intent);
     }

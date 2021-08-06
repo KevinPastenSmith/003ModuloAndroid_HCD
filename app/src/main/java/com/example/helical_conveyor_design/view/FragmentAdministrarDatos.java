@@ -1,4 +1,4 @@
-package com.example.helical_conveyor_design;
+package com.example.helical_conveyor_design.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ImageButton;
+
+import com.example.helical_conveyor_design.R;
+import com.example.helical_conveyor_design.view.AdministrarDatosUsuario;
+import com.example.helical_conveyor_design.view.AdministrarProyectosGuardados;
 
 public class FragmentAdministrarDatos extends Fragment implements View.OnClickListener {
 
-    Button btn1_administrarDatosUsuario, btn2_administrarProyectosGuardados, btn3_administrarProyectoActual;
+    Button btn2_administrarProyectosGuardados, btn3_administrarProyectoActual;
+    ImageButton ibtn1_administrarDatosUsuario;
     View vista_fragmentoAdministrarDatos;
 
     public FragmentAdministrarDatos() {
@@ -26,8 +31,8 @@ public class FragmentAdministrarDatos extends Fragment implements View.OnClickLi
 
         vista_fragmentoAdministrarDatos = inflater.inflate(R.layout.fragment_administrar_datos, container, false);
 
-        btn1_administrarDatosUsuario = (Button) vista_fragmentoAdministrarDatos.findViewById(R.id.btn_administrarDatosUsuario);
-        btn1_administrarDatosUsuario.setOnClickListener(this);
+        ibtn1_administrarDatosUsuario = (ImageButton) vista_fragmentoAdministrarDatos.findViewById(R.id.ibtn_administrarDatosUsuario);
+        ibtn1_administrarDatosUsuario.setOnClickListener(this);
 
         btn2_administrarProyectosGuardados = (Button) vista_fragmentoAdministrarDatos.findViewById(R.id.btn_administrarProyectosGuardados);
         btn2_administrarProyectosGuardados.setOnClickListener(this);
@@ -43,7 +48,7 @@ public class FragmentAdministrarDatos extends Fragment implements View.OnClickLi
 
         switch (v.getId()) {
 
-            case R.id.btn_administrarDatosUsuario:
+            case R.id.ibtn_administrarDatosUsuario:
 
                 Intent intentAdministrarDatosUsuario = new Intent(getContext(), AdministrarDatosUsuario.class);
                 startActivity(intentAdministrarDatosUsuario);

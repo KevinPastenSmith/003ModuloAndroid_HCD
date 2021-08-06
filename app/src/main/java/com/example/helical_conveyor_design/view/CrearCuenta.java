@@ -1,4 +1,4 @@
-package com.example.helical_conveyor_design;
+package com.example.helical_conveyor_design.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.helical_conveyor_design.R;
+import com.example.helical_conveyor_design.view.Logueo;
 
 
 public class CrearCuenta extends AppCompatActivity {
@@ -52,7 +55,7 @@ public class CrearCuenta extends AppCompatActivity {
 
                 Toast.makeText(this, getString(R.string.toast_cuentaCreada), Toast.LENGTH_LONG).show();
 
-                Intent cuentaRegistrada = new Intent(this,Logueo.class);
+                Intent cuentaRegistrada = new Intent(this, Logueo.class);
                 startActivity(cuentaRegistrada);
 
 

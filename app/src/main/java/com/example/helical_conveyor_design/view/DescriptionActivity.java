@@ -1,4 +1,4 @@
-package com.example.helical_conveyor_design;
+package com.example.helical_conveyor_design.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.helical_conveyor_design.R;
 import com.example.helical_conveyor_design.model.RecyclerProyectosComunidad;
 
 public class DescriptionActivity extends AppCompatActivity {

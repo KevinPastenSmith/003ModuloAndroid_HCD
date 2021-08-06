@@ -1,4 +1,4 @@
-package com.example.helical_conveyor_design;
+package com.example.helical_conveyor_design.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.helical_conveyor_design.R;
 
 
 public class Logueo extends AppCompatActivity {
@@ -45,7 +46,7 @@ public class Logueo extends AppCompatActivity {
         editor.putString("nickInvitado",et3_logueo_nickInvitado.getText().toString());
         editor.commit();
 
-        Intent invitado = new Intent(this,Invitado.class);
+        Intent invitado = new Intent(this, Invitado.class);
         invitado.putExtra("nickInvitadoLogueo",et3_logueo_nickInvitado.getText().toString());
         startActivity(invitado);
 
@@ -63,7 +64,7 @@ public class Logueo extends AppCompatActivity {
         SharedPreferences logueo = getSharedPreferences("password" , Context.MODE_PRIVATE);
         String passwordPreferencia = logueo.getString(mailLogueo, "");
 
-        Intent ingresarIntent = new Intent(this,Inicio.class);
+        Intent ingresarIntent = new Intent(this, Inicio.class);
         startActivity(ingresarIntent);
 
 /*

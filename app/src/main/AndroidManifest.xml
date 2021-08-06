@@ -10,25 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design">
         <activity
-            android:name=".DescriptionActivity"
+            android:name=".view.DescriptionActivity"
             android:exported="true" />
         <activity
-            android:name=".NuevaHelice"
+            android:name=".view.NuevaHelice"
             android:exported="true" />
-        <activity android:name=".AdministrarProyectosGuardados" />
-        <activity android:name=".AdministrarDatosUsuario" />
-        <activity android:name=".Nuevo_Proyecto" />
-        <activity android:name=".Logueo">
+        <activity android:name=".view.AdministrarProyectosGuardados" />
+        <activity android:name=".view.AdministrarDatosUsuario" />
+        <activity android:name=".view.Nuevo_Proyecto" />
+        <activity android:name=".view.Logueo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Invitado" />
-        <activity android:name=".CrearCuenta" />
-        <activity android:name=".Inicio" />
-        <activity android:name=".Nuevo_Material" />
+        <activity android:name=".view.Invitado" />
+        <activity android:name=".view.CrearCuenta" />
+        <activity android:name=".view.Inicio" />
+        <activity android:name=".view.Nuevo_Material" />
     </application>
 
 </manifest>

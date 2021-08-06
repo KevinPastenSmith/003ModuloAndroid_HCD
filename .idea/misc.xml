@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/drawable/ic_baseline_portrait_24.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_material.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_administrar_datos.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_nuevo.xml" value="0.33" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/drawable-v24/outline_contact_mail_24.xml" value="0.1" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout-land/fragment_nuevo.xml" value="0.35735735735735735" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_administrar_datos.xml" value="0.2375" />

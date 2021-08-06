@@ -1,15 +1,16 @@
-package com.example.helical_conveyor_design;
+package com.example.helical_conveyor_design.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.SurfaceControl;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.helical_conveyor_design.R;
+import com.example.helical_conveyor_design.view.FragmentAdministrarProyectoActual;
+import com.example.helical_conveyor_design.view.FragmentNuevo;
 
 public class Invitado extends AppCompatActivity {
 
