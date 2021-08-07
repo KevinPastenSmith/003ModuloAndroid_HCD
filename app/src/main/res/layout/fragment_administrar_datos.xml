@@ -48,13 +48,14 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:background="@android:color/white"
                     android:id="@+id/ibtn_administrarDatosUsuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:layout_weight="1"
                     android:contentDescription="AdministrarDatosUsuario"
-                    tools:src="@drawable/twotone_manage_accounts_black_48dp" />
+                    android:src="@drawable/twotone_manage_accounts_black_48dp" />
 
                 <TextView
                     android:id="@+id/tv_administrarDatos_administrarDatosUsuario"

@@ -5,9 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/iv_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/portadatransportadorhelicoidal"
+        android:contentDescription="@string/imagen_de_fondo" />
+
+
     <Button
         android:id="@+id/btn_logueo_ingresar"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="btn_ingresar"
@@ -19,7 +28,7 @@
 
     <Button
         android:id="@+id/btn_logueo_crearcuenta"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:onClick="btn_crearCuenta"
@@ -31,7 +40,7 @@
 
     <Button
         android:id="@+id/btn_logueo_invitado"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:onClick="ingresarInvitado"
@@ -42,8 +51,9 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_logueo_crearcuenta" />
 
     <EditText
+        android:background="@android:color/white"
         android:id="@+id/et_logueo_nickInvitado"
-        android:layout_width="300dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:ems="10"
