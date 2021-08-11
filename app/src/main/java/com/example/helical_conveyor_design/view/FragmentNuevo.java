@@ -53,7 +53,7 @@ public class FragmentNuevo extends Fragment implements View.OnClickListener {
 
         return vista;
     }
-//prueba para el commit
+//prueba para el
     @Override
     public void onClick(View v) {
 
