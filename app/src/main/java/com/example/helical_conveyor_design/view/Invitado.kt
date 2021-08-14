@@ -1,61 +1,43 @@
-package com.example.helical_conveyor_design.view;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
-
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-
-import com.example.helical_conveyor_design.R;
-import com.example.helical_conveyor_design.view.FragmentAdministrarProyectoActual;
-import com.example.helical_conveyor_design.view.FragmentNuevo;
-
-public class Invitado extends AppCompatActivity {
+package com.example.helical_conveyor_design.view
 
 
-    private TextView tv1_invitado_hola;
-    private Button btn1_invitado_nuevo,btn2_invitado_adminProyectActual;
-    FragmentNuevo fragment_invitado_nuevo;
-    FragmentAdministrarProyectoActual fragment_invitado_administrarProyectActual;
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.helical_conveyor_design.R
+import com.example.helical_conveyor_design.databinding.ActivityInvitadoBinding
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_invitado);
+class Invitado : AppCompatActivity() {
 
-        tv1_invitado_hola = (TextView) findViewById(R.id.tv_invitado_holainvitado);
-        btn1_invitado_nuevo = (Button) findViewById(R.id.btn_invitado_nuevo);
-        btn2_invitado_adminProyectActual = (Button) findViewById(R.id.btn_invitado_adminproyectactual);
+    private var fragmentInvitadoNuevo: FragmentNuevo? = FragmentNuevo()
+    private var fragmentInvitadoAdministrarproyectactual: FragmentAdministrarProyectoActual? = FragmentAdministrarProyectoActual()
 
-        fragment_invitado_nuevo = new FragmentNuevo();
-        fragment_invitado_administrarProyectActual = new FragmentAdministrarProyectoActual();
-
-        getSupportFragmentManager().beginTransaction().add(R.id.framelayout_invitado, fragment_invitado_nuevo).commit();
-
-        String nickInvitado = getIntent().getStringExtra("nickInvitadoLogueo");
-        tv1_invitado_hola.setText("Hola "+nickInvitado);
+    private lateinit var binding:ActivityInvitadoBinding
 
 
-    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityInvitadoBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    public void onClick(View view) {
+        supportFragmentManager.beginTransaction().add(R.id.framelayout_invitado, fragmentInvitadoNuevo!!).commit()
 
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-
-        switch (view.getId()){
-
-            case R.id.btn_invitado_nuevo:
-                fragmentTransaction.replace(R.id.framelayout_invitado, fragment_invitado_nuevo);
-                break;
-            case R.id.btn_invitado_adminproyectactual:
-                fragmentTransaction.replace(R.id.framelayout_invitado, fragment_invitado_administrarProyectActual);
-                break;
-
+        binding.btnInvitadoNuevo.setOnClickListener {
+            fragmentNuevoTransaction()
+        }
+        binding.btnInvitadoAdminproyectactual.setOnClickListener {
+            fragmentInvitadoAdministrarproyectactualTransaction()
         }
 
-        fragmentTransaction.commit();
-
     }
+
+    private fun fragmentInvitadoAdministrarproyectactualTransaction() {
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.framelayout_invitado, fragmentInvitadoAdministrarproyectactual!!).commit()
+    }
+
+    private fun fragmentNuevoTransaction() {
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.framelayout_invitado, fragmentInvitadoNuevo!!).commit()
+    }
+
 }
