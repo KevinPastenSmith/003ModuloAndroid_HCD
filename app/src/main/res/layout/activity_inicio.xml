@@ -30,16 +30,14 @@
             android:id="@+id/btn_inicio_nuevo"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="onClick"
             android:text="@string/btn_inicio_nuevo_String"
             android:layout_weight="1"
             />
 
         <Button
-            android:id="@+id/btn_inicio_administrarProyectos"
+            android:id="@+id/btn_inicio_administrarDatos"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:onClick="onClick"
             android:text="@string/btn_inicio_administrarDatos_String"
             android:layout_weight="1.2"
             />
@@ -48,7 +46,6 @@
             android:id="@+id/btn_inicio_proyectosComunidad"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:onClick="onClick"
             android:text="@string/btn_inicio_proyectosComunidad_String"
             android:layout_weight="1"
             />

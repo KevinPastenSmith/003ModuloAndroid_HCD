@@ -1,16 +1,16 @@
-package com.example.helical_conveyor_design.view;
+package com.example.helical_conveyor_design.view
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.helical_conveyor_design.databinding.ActivityAdministrarDatosUsuarioBinding
 
-import android.os.Bundle;
+class AdministrarDatosUsuario : AppCompatActivity() {
 
-import com.example.helical_conveyor_design.R;
+    private lateinit var binding: ActivityAdministrarDatosUsuarioBinding
 
-public class AdministrarDatosUsuario extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_administrar_datos_usuario);
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityAdministrarDatosUsuarioBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }

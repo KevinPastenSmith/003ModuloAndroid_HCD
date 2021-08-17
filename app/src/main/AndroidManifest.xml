@@ -10,17 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design">
         <activity
+            android:name=".view.AdministrarProyectoActual"
+            android:exported="true" />
+        <activity
+            android:name=".view.NuevoTubo"
+            android:exported="true" />
+        <activity
+            android:name=".view.NuevoTransportador"
+            android:exported="true" />
+        <activity
+            android:name=".view.NuevoSistemaHelicoidal"
+            android:exported="true" />
+        <activity
             android:name=".view.AdministrarMaterialActual"
             android:exported="true" />
         <activity
             android:name=".view.DescriptionActivity"
             android:exported="true" />
         <activity
+            android:name=".view.NuevoMotor"
+            android:exported="true" />
+        <activity
             android:name=".view.NuevaHelice"
             android:exported="true" />
         <activity android:name=".view.AdministrarProyectosGuardados" />
         <activity android:name=".view.AdministrarDatosUsuario" />
-        <activity android:name=".view.Nuevo_Proyecto" />
+        <activity android:name=".view.NuevoProyecto" />
         <activity android:name=".view.Logueo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +46,7 @@
         <activity android:name=".view.Invitado" />
         <activity android:name=".view.CrearCuenta" />
         <activity android:name=".view.Inicio" />
-        <activity android:name=".view.Nuevo_Material" />
+        <activity android:name=".view.NuevoMaterial" />
     </application>
 
 </manifest>

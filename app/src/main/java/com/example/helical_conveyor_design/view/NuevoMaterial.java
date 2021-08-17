@@ -17,7 +17,7 @@ import com.example.helical_conveyor_design.R;
 
 import java.util.ArrayList;
 
-public class Nuevo_Material extends AppCompatActivity {
+public class NuevoMaterial extends AppCompatActivity {
 
     private TextView  tv2_selecTipoMezcla, tv3_ClasificacionMaterial, tv4_densidad, tv5_abrasividad, tv6_fluidez, tv7_tipoMaterial, tv8_categoriaPeso;
     private EditText et1_nombreMterial;

@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.helical_conveyor_design.R;
 
-public class Nuevo_Proyecto extends AppCompatActivity {
+public class NuevoProyecto extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,65 +1,38 @@
-package com.example.helical_conveyor_design.view;
+package com.example.helical_conveyor_design.view
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.helical_conveyor_design.R
+import com.example.helical_conveyor_design.databinding.ActivityInicioBinding
 
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+class Inicio : AppCompatActivity() {
 
-import com.example.helical_conveyor_design.R;
+    private var fragmentInicioNuevo: FragmentNuevo? = FragmentNuevo()
+    private var fragmentInicioAdministrarDatos: FragmentAdministrarDatos? = FragmentAdministrarDatos()
+    private var fragmentInicioProyectosComunidad: FragmentProyectosComunidad? = FragmentProyectosComunidad()
 
-public class Inicio extends AppCompatActivity implements View.OnClickListener{
+    private lateinit var binding: ActivityInicioBinding
 
-    private Button btn1_inicio_nuevo, btn2_inicio_administrarDatos, btn3_inicio_proyectosComunidad;
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityInicioBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    FragmentNuevo fragment_inicio_nuevo;
-    FragmentAdministrarDatos fragment_inicio_administrarDatos;
-    FragmentProyectosComunidad fragment_inicio_proyectosComunidad;
+        supportFragmentManager.beginTransaction().add(R.id.framelayout_Inicio, fragmentInicioNuevo!!).commit()
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
-
-        fragment_inicio_nuevo = new FragmentNuevo();
-        fragment_inicio_administrarDatos = new FragmentAdministrarDatos();
-        fragment_inicio_proyectosComunidad = new FragmentProyectosComunidad();
-
-
-        getSupportFragmentManager().beginTransaction().add(R.id.framelayout_Inicio, fragment_inicio_nuevo).commit();
-
-        btn1_inicio_nuevo = (Button) findViewById(R.id.btn_inicio_nuevo);
-        btn2_inicio_administrarDatos = (Button) findViewById(R.id.btn_inicio_administrarProyectos);
-        btn3_inicio_proyectosComunidad = (Button) findViewById(R.id.btn_inicio_proyectosComunidad);
-
-        btn1_inicio_nuevo.setOnClickListener(this);
-        btn2_inicio_administrarDatos.setOnClickListener(this);
-        btn3_inicio_proyectosComunidad.setOnClickListener(this);
-
-    }
-
-
-    @Override
-    public void onClick(View v) {
-
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-
-        switch (v.getId()){
-
-            case R.id.btn_inicio_nuevo:
-                fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_nuevo);
-                break;
-            case R.id.btn_inicio_administrarProyectos:
-                fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_administrarDatos);
-                break;
-            case R.id.btn_inicio_proyectosComunidad:
-                fragmentTransaction.replace(R.id.framelayout_Inicio, fragment_inicio_proyectosComunidad);
-                break;
+        binding.btnInicioNuevo.setOnClickListener {
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.framelayout_Inicio, fragmentInicioNuevo!!).commit()
+        }
+        binding.btnInicioAdministrarDatos.setOnClickListener {
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.framelayout_Inicio, fragmentInicioAdministrarDatos!!).commit()
+        }
+        binding.btnInicioProyectosComunidad.setOnClickListener {
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.framelayout_Inicio, fragmentInicioProyectosComunidad!!).commit()
         }
 
-        fragmentTransaction.commit();
-
     }
+
 }

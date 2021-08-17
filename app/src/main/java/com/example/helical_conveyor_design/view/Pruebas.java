@@ -1,5 +1,6 @@
 package com.example.helical_conveyor_design.view;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -13,14 +14,12 @@ import android.widget.Toast;
 
 import com.example.helical_conveyor_design.R;
 
-
-public class FragmentNuevo extends Fragment implements View.OnClickListener {
-
+public class Pruebas extends Fragment implements View.OnClickListener{
     ImageButton ibtn_nuevahelice,ibtn_nuevoMotor, ibtn_nuevoProyecto, ibtn_nuevoSistemaHelicoidal, ibtn_nuevoMaterial, ibtn_nuevoTransportador, ibtn_nuevoTubo;
 
     View vista;
 
-    public FragmentNuevo() {
+    public Pruebas() {
 
     }
 
@@ -30,30 +29,31 @@ public class FragmentNuevo extends Fragment implements View.OnClickListener {
 
         vista = inflater.inflate(R.layout.fragment_nuevo, container, false);
 
-        ibtn_nuevoProyecto = (ImageButton) vista.findViewById(R.id.ibtn_nuevoproyecto);
+        ibtn_nuevoProyecto = vista.findViewById(R.id.ibtn_nuevoproyecto);
         ibtn_nuevoProyecto.setOnClickListener(this);
 
-        ibtn_nuevoSistemaHelicoidal = (ImageButton) vista.findViewById(R.id.ibtn_nuevosistemahelicoidal);
+        ibtn_nuevoSistemaHelicoidal = vista.findViewById(R.id.ibtn_nuevosistemahelicoidal);
         ibtn_nuevoSistemaHelicoidal.setOnClickListener(this);
 
-        ibtn_nuevoMaterial = (ImageButton) vista.findViewById(R.id.ibtn_nuevomaterial);
+        ibtn_nuevoMaterial = vista.findViewById(R.id.ibtn_nuevomaterial);
         ibtn_nuevoMaterial.setOnClickListener(this);
 
-        ibtn_nuevoMotor = (ImageButton) vista.findViewById(R.id.ibtn_nuevomotor);
+        ibtn_nuevoMotor = vista.findViewById(R.id.ibtn_nuevomotor);
         ibtn_nuevoMotor.setOnClickListener(this);
 
-        ibtn_nuevoTransportador = (ImageButton) vista.findViewById(R.id.ibtn_nuevotransportador);
+        ibtn_nuevoTransportador = vista.findViewById(R.id.ibtn_nuevotransportador);
         ibtn_nuevoTransportador.setOnClickListener(this);
 
-        ibtn_nuevahelice = (ImageButton) vista.findViewById(R.id.ibtn_nuevahelice);
+        ibtn_nuevahelice = vista.findViewById(R.id.ibtn_nuevahelice);
         ibtn_nuevahelice.setOnClickListener(this);
 
-        ibtn_nuevoTubo = (ImageButton) vista.findViewById(R.id.ibtn_nuevotubo);
+        ibtn_nuevoTubo = vista.findViewById(R.id.ibtn_nuevotubo);
         ibtn_nuevoTubo.setOnClickListener(this);
 
         return vista;
     }
-//prueba para el
+    //prueba para el
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
 
@@ -61,7 +61,7 @@ public class FragmentNuevo extends Fragment implements View.OnClickListener {
 
             case R.id.ibtn_nuevoproyecto:
 
-                Intent intentNuevoProyecto = new Intent(getContext(), Nuevo_Proyecto.class);
+                Intent intentNuevoProyecto = new Intent(getContext(), NuevoProyecto.class);
                 startActivity(intentNuevoProyecto);
                 Toast.makeText(getContext(),"ingresando a nuevo proyecto", Toast.LENGTH_SHORT).show();
                 break;
@@ -71,7 +71,7 @@ public class FragmentNuevo extends Fragment implements View.OnClickListener {
                 break;
 
             case R.id.ibtn_nuevomaterial:
-                Intent intentNuevoMaterial = new Intent(getContext(), Nuevo_Material.class);
+                Intent intentNuevoMaterial = new Intent(getContext(), NuevoMaterial.class);
                 startActivity(intentNuevoMaterial);
                 Toast.makeText(getContext(),"ingresando a nuevo material", Toast.LENGTH_SHORT).show();
                 break;
