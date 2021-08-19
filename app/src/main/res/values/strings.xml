@@ -80,27 +80,46 @@
     <string name="tv_tipoMaterial_String">Tipo de material</string>
     <string name="tv_categoriaPeso_String">Categoria de peso</string>
 
-    //Strings de activity "nueva helice"
+    //"nueva helice" Strings de activity
     <string name="tv_nuevaHelice_strings">Nueva Helice</string>
     <string name="et_nuevaHelice_strings">Introduzca el nombre de la helice</string>
 
-    //Strings de fragment "Administrar Datos"
+    //"Administrar Datos" Strings
     <string name="tv_administrardatos_Strings">Administrar Datos</string>
     <string name="btn_administrarDatosUsuario_String">Administrar Datos de Usuario</string>
     <string name="btn_administrarProyectosGuardados_String">Administrar Proyectos Guardados</string>
     <string name="btn_administrarProyectoActual_String">Administrar Proyecto Actual</string>
+    <string name="btn_administrarParametros_String">Administrar Parametros</string>
 
+    //Administrar Parametros Strings
+    <string name="tv_administrarParametros_String">Administrar Parametros</string>
+    <string name="tv_administrarMotores_String">Administrar Motores</string>
+    <string name="tv_administrarMateriales_String">Administrar Materiales</string>
+    <string name="tv_administrarSistemasTransporte_String">Administrar Sistemas de Transporte Helicoidal</string>
+    <string name="tv_administrarTransportadores_String">Administrar Transportadores</string>
+    <string name="tv_administrarHelices_String">Administrar Helices</string>
+    <string name="tv_administrarTubos_String">Administrar Tubos</string>
 
     //Strings de activity "Administrar proyectos Guardados"
     <string name="tv_administrarProyectosGuardados_strings">Proyectos Guardados</string>
+
+    //Nuevo Motor Strings
+    <string name="btn_nuevoMotor_String">Boton NuevoMotor</string>
+    <string name="tv_establecerPosicion_String">Establecer posicion de instalacion</string>
+    <string name="et_nombreNuevoMotor_String">Ingresa el nombre para tu motor</string>
+    <string name="tv_SeleccionaParametros_String">Confguracion de Motor</string>
+    <string name="rbtn_posicionSuperior_String">Seccion Superior</string>
+    <string name="rbtn_posicionInferior_String">Seccion Inferior</string>
+    <string name="rbtn_sentidoGiroAntiHorario_String">Sentido AntiHorario</string>
+    <string name="rbtn_sentidoGiroHorario_String">Sentido Horarior</string>
+    <string name="btn_crearMotor_String">Crear Motor</string>
 
 
     //Strings de activity "proyectos de la comunidad"
     <string name="tv_proyectosComunidad_String">Proyectos de la Comunidad</string>
     <string name="tv_nombreProyecto_recyclerview_String">Proyecto Generico 1</string>
     <string name="tv_mailUsuario_recyclerview_String">mail.generico@gmail.com</string>
-    <string name="tv_nickUsuario_recyclerview_String">nickGenerico1</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tv_nickUsuario_recyclerview_String">nickGenerico</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="imagen_de_fondo">Imagen de fondo</string>
 

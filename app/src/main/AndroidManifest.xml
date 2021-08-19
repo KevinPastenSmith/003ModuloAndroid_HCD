@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.helical_conveyor_design">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design">
+        <activity
+            android:name=".view.AdministrarMateriales"
+            android:exported="true" />
+        <activity
+            android:name=".view.AdministrarParametros"
+            android:exported="true" />
         <activity
             android:name=".view.AdministrarProyectoActual"
             android:exported="true" />
@@ -28,7 +36,7 @@
             android:name=".view.DescriptionActivity"
             android:exported="true" />
         <activity
-            android:name=".view.NuevoMotor"
+            android:name=".view.NuevoMotorActivity"
             android:exported="true" />
         <activity
             android:name=".view.NuevaHelice"

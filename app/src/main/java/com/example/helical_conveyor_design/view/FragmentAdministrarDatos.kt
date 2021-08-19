@@ -35,6 +35,10 @@ class FragmentAdministrarDatos : Fragment() {
             val intentAdministrarProyectosGuardados = Intent(context, AdministrarProyectosGuardados::class.java)
             startActivity(intentAdministrarProyectosGuardados)
         }
+        binding.btnAdministrarParametros.setOnClickListener {
+            val intentAdministrarParametros = Intent(context, AdministrarProyectosGuardados::class.java)
+            startActivity(intentAdministrarParametros)
+        }
 
         return binding.root
     }

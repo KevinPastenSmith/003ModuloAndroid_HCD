@@ -5,13 +5,15 @@
       <map>
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/drawable/ic_baseline_portrait_24.xml" value="0.37604166666666666" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_datos_usuario.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_materiales.xml" value="0.2864583333333333" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_parametros.xml" value="0.29583333333333334" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_proyecto_actual.xml" value="0.29635416666666664" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_proyectos_guardados.xml" value="0.2791666666666667" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_inicio.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_invitado.xml" value="0.2791666666666667" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_logueo.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_material.xml" value="0.35989583333333336" />
-        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_motor.xml" value="0.28229166666666666" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_motor.xml" value="0.33" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_sistema_helicoidal.xml" value="0.29635416666666664" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_transportador.xml" value="0.29635416666666664" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_tubo.xml" value="0.29635416666666664" />

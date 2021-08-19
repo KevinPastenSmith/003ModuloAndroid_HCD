@@ -35,7 +35,7 @@ class FragmentNuevo : Fragment() {
             startActivity(intentNuevoMaterial)
         }
         binding.ibtnNuevomotor.setOnClickListener {
-            val intentNuevoMotor = Intent(context, NuevoMotor::class.java)
+            val intentNuevoMotor = Intent(context, NuevoMotorActivity::class.java)
             startActivity(intentNuevoMotor)
         }
         binding.ibtnNuevotransportador.setOnClickListener {

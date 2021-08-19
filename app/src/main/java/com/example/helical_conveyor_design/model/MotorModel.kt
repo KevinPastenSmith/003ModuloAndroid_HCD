@@ -1,27 +1,12 @@
 package com.example.helical_conveyor_design.model
 
-class MotorModel {
-    //Metodos Getters y Setters
-    //Atributos
-    private var sentidoGiroMotor : String? = null
-    private var opcionSentidoGiroMotor = 0
-    private var posicionMotor : String? = null
-    private var opcionPosicionMotor = 0
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-    //Metodo Constructor
-
-    constructor(
-        sentidoGiroMotor: String?,
-        opcionSentidoGiroMotor: Int,
-        posicionMotor: String?,
-        opcionPosicionMotor: Int
-    ) : super() {
-        this.sentidoGiroMotor = sentidoGiroMotor
-        this.opcionSentidoGiroMotor = opcionSentidoGiroMotor
-        this.posicionMotor = posicionMotor
-        this.opcionPosicionMotor = opcionPosicionMotor
-    }
-
-    constructor() : super() {}
-
-}
+@Entity
+data class MotorModel(
+                      @PrimaryKey(autoGenerate = true)
+                      private var id: Int,
+                      private var nombreMotor: String,
+                      private var sentidoGiroMotor: String,
+                      private var posicionMotor: String)
