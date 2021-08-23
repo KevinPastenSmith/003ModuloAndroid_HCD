@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/iv_recyclerAdministrarMateriales"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:contentDescription="@string/tv_administrarMaterialesDescripcionImagen_String"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_recyclerAdministrarMateriales_interno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/iv_recyclerAdministrarMateriales"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_nombreMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/black"
+                    android:text="@string/tv_administrarMaterialesNombreMaterial_String"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesId_String"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_tipoMezcla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesTipoMezcla_String"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_tipoMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesTipoMaterial_String"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_abrasividad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesAbrasividad_String"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_densidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesDensidad_String"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_fluidez"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesFluidez_String"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_clasificacionMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesClasificacionMaterial_String"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_recycyclerAdministrarMateriales_categoriaPeso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_administrarMaterialesCategoriaPeso_String"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

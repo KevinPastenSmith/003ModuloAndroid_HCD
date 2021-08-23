@@ -123,4 +123,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="imagen_de_fondo">Imagen de fondo</string>
 
+    //Recycler Administrar Materiales
+    <string name="tv_administrarMaterialesId_String">Id Material: </string>
+    <string name="tv_administrarMaterialesNombreMaterial_String">Nombre Material: </string>
+    <string name="tv_administrarMaterialesTipoMezcla_String">Tipo de Mezcla: </string>
+    <string name="tv_administrarMaterialesTipoMaterial_String">Tipo de Material: </string>
+    <string name="tv_administrarMaterialesAbrasividad_String">Abrasividad: </string>
+    <string name="tv_administrarMaterialesDensidad_String">Densidad: </string>
+    <string name="tv_administrarMaterialesFluidez_String">Fluidez: </string>
+    <string name="tv_administrarMaterialesClasificacionMaterial_String">Clasificacion de Material: </string>
+    <string name="tv_administrarMaterialesCategoriaPeso_String">Categoria de Peso: </string>
+    <string name="tv_administrarMaterialesDescripcionImagen_String">Imagen Material</string>
+
+
 </resources>

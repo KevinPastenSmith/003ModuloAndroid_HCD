@@ -12,49 +12,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design">
         <activity
-            android:name=".view.AdministrarMateriales"
+            android:name="com.example.helical_conveyor_design.ui.view.AdministrarMateriales"
             android:exported="true" />
         <activity
-            android:name=".view.AdministrarParametros"
+            android:name="com.example.helical_conveyor_design.ui.view.AdministrarParametros"
             android:exported="true" />
         <activity
-            android:name=".view.AdministrarProyectoActual"
+            android:name="com.example.helical_conveyor_design.ui.view.AdministrarProyectoActual"
             android:exported="true" />
         <activity
-            android:name=".view.NuevoTubo"
+            android:name="com.example.helical_conveyor_design.ui.view.NuevoTubo"
             android:exported="true" />
         <activity
-            android:name=".view.NuevoTransportador"
+            android:name="com.example.helical_conveyor_design.ui.view.NuevoTransportador"
             android:exported="true" />
         <activity
-            android:name=".view.NuevoSistemaHelicoidal"
+            android:name="com.example.helical_conveyor_design.ui.view.NuevoSistemaHelicoidal"
             android:exported="true" />
         <activity
-            android:name=".view.AdministrarMaterialActual"
+            android:name="com.example.helical_conveyor_design.ui.view.AdministrarMaterialActual"
             android:exported="true" />
         <activity
-            android:name=".view.DescriptionActivity"
+            android:name="com.example.helical_conveyor_design.ui.view.DescriptionActivity"
             android:exported="true" />
         <activity
-            android:name=".view.NuevoMotorActivity"
+            android:name="com.example.helical_conveyor_design.ui.view.NuevoMotorActivity"
             android:exported="true" />
         <activity
-            android:name=".view.NuevaHelice"
+            android:name="com.example.helical_conveyor_design.ui.view.NuevaHelice"
             android:exported="true" />
-        <activity android:name=".view.AdministrarProyectosGuardados" />
-        <activity android:name=".view.AdministrarDatosUsuario" />
-        <activity android:name=".view.NuevoProyecto" />
-        <activity android:name=".view.Logueo">
+        <activity android:name="com.example.helical_conveyor_design.ui.view.AdministrarProyectosGuardados" />
+        <activity android:name="com.example.helical_conveyor_design.ui.view.AdministrarDatosUsuario" />
+        <activity android:name="com.example.helical_conveyor_design.ui.view.NuevoProyecto" />
+        <activity android:name="com.example.helical_conveyor_design.ui.view.Logueo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.Invitado" />
-        <activity android:name=".view.CrearCuenta" />
-        <activity android:name=".view.Inicio" />
-        <activity android:name=".view.NuevoMaterial" />
+        <activity android:name="com.example.helical_conveyor_design.ui.view.Invitado" />
+        <activity android:name="com.example.helical_conveyor_design.ui.view.CrearCuenta" />
+        <activity android:name="com.example.helical_conveyor_design.ui.view.Inicio" />
+        <activity android:name="com.example.helical_conveyor_design.ui.view.NuevoMaterial" />
     </application>
 
 </manifest>
