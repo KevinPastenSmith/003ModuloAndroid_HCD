@@ -3,33 +3,30 @@ package com.example.helical_conveyor_design.ui.view
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
-import com.example.helical_conveyor_design.databinding.ActivityAdministrarMaterialesBinding
-import com.example.helical_conveyor_design.ui.viewmodel.MaterialViewModel
+import com.example.helical_conveyor_design.R
+import com.example.helical_conveyor_design.ui.viewmodel.MaterialesViewModel
 
 class AdministrarMateriales : AppCompatActivity() {
 
-    private lateinit var binding: ActivityAdministrarMaterialesBinding
 
-    private val materialViewModel: MaterialViewModel by viewModels()
+    private val materialViewModel: MaterialesViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAdministrarMaterialesBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_administrar_materiales)
 
-        setupFragment()
+
+
+
+        /*
+        val repository = MaterialRepository (MaterialesApi())
+
+        GlobalScope.launch(Dispatchers.Main){
+            val materiales = repository.getMateriales()
+            Toast.makeText(this@AdministrarMateriales,materiales.toString(),Toast.LENGTH_LONG).show()
+        }
+        */
 
     }
-
-    private fun setupFragment() {
-        val fragment = FragmentRecyclerListMateriales.newInstance()
-        val fragmentManager: FragmentManager = supportFragmentManager
-        val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(android.R.id.content, fragment)
-        fragmentTransaction.commit()
-    }
-
 
 }

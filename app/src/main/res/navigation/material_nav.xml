@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/material_nav"
+    app:startDestination="@id/materialesFragment">
+
+    <fragment
+        android:id="@+id/materialesFragment"
+        android:name="com.example.helical_conveyor_design.ui.view.MaterialesFragment"
+        android:label="materiales_fragment"
+        tools:layout="@layout/materiales_fragment" />
+</navigation>
