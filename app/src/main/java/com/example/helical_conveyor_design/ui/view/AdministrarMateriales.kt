@@ -16,17 +16,6 @@ class AdministrarMateriales : AppCompatActivity() {
         setContentView(R.layout.activity_administrar_materiales)
 
 
-
-
-        /*
-        val repository = MaterialRepository (MaterialesApi())
-
-        GlobalScope.launch(Dispatchers.Main){
-            val materiales = repository.getMateriales()
-            Toast.makeText(this@AdministrarMateriales,materiales.toString(),Toast.LENGTH_LONG).show()
-        }
-        */
-
     }
 
 }

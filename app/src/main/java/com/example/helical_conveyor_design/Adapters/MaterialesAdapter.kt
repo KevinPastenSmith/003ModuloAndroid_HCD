@@ -26,6 +26,7 @@ class MaterialesAdapter (
 
     override fun onBindViewHolder(holder: MaterialesViewHolder, position: Int) {
         holder.recyclerMaterialBinding.material = materiales[position]
+
     }
 
     inner class MaterialesViewHolder(

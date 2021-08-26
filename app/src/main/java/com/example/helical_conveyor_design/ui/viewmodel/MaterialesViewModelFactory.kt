@@ -13,7 +13,6 @@ class MaterialesViewModelFactory (
         return MaterialesViewModel(repository) as T
     }
 
-
 }
 
 

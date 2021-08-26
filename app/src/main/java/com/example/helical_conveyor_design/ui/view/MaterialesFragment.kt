@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.helical_conveyor_design.Adapters.MaterialesAdapter
 import com.example.helical_conveyor_design.R
@@ -34,7 +34,8 @@ class MaterialesFragment : Fragment() {
         val api = MaterialesApi()
         val repository = MaterialRepository(api)
         factory = MaterialesViewModelFactory(repository)
-        viewModel = ViewModelProviders.of(this, factory).get(MaterialesViewModel::class.java)
+        viewModel = ViewModelProvider(this, factory).get(MaterialesViewModel::class.java)
+        viewModel.getMateriales()
         viewModel.materiales.observe(viewLifecycleOwner, Observer {materiales ->
             recycler_view_materiales.also {
                 it.layoutManager = LinearLayoutManager(requireContext())

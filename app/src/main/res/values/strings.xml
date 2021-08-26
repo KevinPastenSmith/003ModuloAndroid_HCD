@@ -129,11 +129,12 @@
     <string name="tv_administrarMaterialesTipoMezcla_String">Tipo de Mezcla: </string>
     <string name="tv_administrarMaterialesTipoMaterial_String">Tipo de Material: </string>
     <string name="tv_administrarMaterialesAbrasividad_String">Abrasividad: </string>
-    <string name="tv_administrarMaterialesDensidad_String">Densidad: </string>
+    <string name="tv_administrarMaterialesDensidad_String">Densidad Promedio: </string>
     <string name="tv_administrarMaterialesFluidez_String">Fluidez: </string>
     <string name="tv_administrarMaterialesClasificacionMaterial_String">Clasificacion de Material: </string>
     <string name="tv_administrarMaterialesCategoriaPeso_String">Categoria de Peso: </string>
     <string name="tv_administrarMaterialesDescripcionImagen_String">Imagen Material</string>
+    <string name="imagen_de_prueba">imagen de prueba</string>
 
 
 </resources>

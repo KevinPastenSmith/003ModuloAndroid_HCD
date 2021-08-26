@@ -10,4 +10,5 @@
         android:name="com.example.helical_conveyor_design.ui.view.MaterialesFragment"
         android:label="materiales_fragment"
         tools:layout="@layout/materiales_fragment" />
+
 </navigation>
