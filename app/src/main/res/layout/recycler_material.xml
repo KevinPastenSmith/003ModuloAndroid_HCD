@@ -17,7 +17,7 @@
         <ImageView
             android:contentDescription="@string/imagen_de_prueba"
             android:id="@+id/iv_recyclerListRow"
-
+            app:url="@{material.imagenMaterial}"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
