@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.helical_conveyor_design.databinding.FragmentNuevoBinding
+import com.example.helical_conveyor_design.ui.view.nuevo.*
 
 
 class FragmentNuevo : Fragment() {

@@ -1,41 +1,42 @@
 package com.example.helical_conveyor_design.ui.view
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.helical_conveyor_design.databinding.ActivityLogueoBinding
 
 
 class Logueo : AppCompatActivity() {
 
-    private lateinit var binding:ActivityLogueoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLogueoBinding.inflate(layoutInflater)
+        val binding = ActivityLogueoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnLogueoIngresar.setOnClickListener{ ingresarTransaction() }
+        with (binding) {
+            btnLogueoInvitado.setOnClickListener {
+                val invitado = Intent(this@Logueo, Invitado::class.java)
+                startActivity(invitado)
+            }
 
-        binding.btnLogueoCrearcuenta.setOnClickListener { crearCuentaTransaction() }
+            btnLogueoCrearcuenta.setOnClickListener {
+                val crearCuenta = Intent(this@Logueo, CrearCuenta::class.java)
+                startActivity(crearCuenta)
+            }
 
-        binding.btnLogueoInvitado.setOnClickListener { invitadoTransaction() }
-
+            btnLogueoIngresar.setOnClickListener {
+                val ingresarIntent = Intent(this@Logueo, Inicio::class.java)
+                startActivity(ingresarIntent)
+            }
+        }
     }
 
-    private fun invitadoTransaction() {
-        val invitado = Intent(this, Invitado::class.java)
-        startActivity(invitado)
+/*
+    private fun logueoTransaction(clase : ) {
+        val logtrans = Intent(this, clase::class.java)
+        startActivity(logtrans)
     }
-
-    private fun crearCuentaTransaction() {
-        val nuevaCuenta = Intent(this, CrearCuenta::class.java)
-        startActivity(nuevaCuenta)
-    }
-
-    private fun ingresarTransaction() {
-        val ingresarIntent = Intent(this, Inicio::class.java)
-        startActivity(ingresarIntent)
-    }
+*/
 
 }

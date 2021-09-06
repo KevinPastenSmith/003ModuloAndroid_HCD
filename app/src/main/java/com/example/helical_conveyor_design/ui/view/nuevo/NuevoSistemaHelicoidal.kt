@@ -1,4 +1,4 @@
-package com.example.helical_conveyor_design.ui.view
+package com.example.helical_conveyor_design.ui.view.nuevo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

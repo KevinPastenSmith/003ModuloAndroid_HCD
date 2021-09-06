@@ -1,6 +1,6 @@
-package com.example.helical_conveyor_design.data.model
+package com.example.helical_conveyor_design.data.model.material
 
-data class Material(
+data class MaterialModel(
     val abrasividad: String,
     val categoriaPeso: String,
     val clasificacionMaterial: String,

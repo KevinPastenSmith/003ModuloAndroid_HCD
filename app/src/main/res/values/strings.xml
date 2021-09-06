@@ -136,5 +136,8 @@
     <string name="tv_administrarMaterialesDescripcionImagen_String">Imagen Material</string>
     <string name="imagen_de_prueba">imagen de prueba</string>
 
+   //Administrar motores
+    <string name="buscar_motor">buscar motor</string>
+
 
 </resources>

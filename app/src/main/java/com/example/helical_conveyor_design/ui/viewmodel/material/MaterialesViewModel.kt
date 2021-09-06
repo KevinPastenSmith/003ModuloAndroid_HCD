@@ -1,10 +1,10 @@
-package com.example.helical_conveyor_design.ui.viewmodel
+package com.example.helical_conveyor_design.ui.viewmodel.material
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.helical_conveyor_design.data.model.Material
-import com.example.helical_conveyor_design.data.network.MaterialRepository
+import com.example.helical_conveyor_design.data.model.material.MaterialModel
+import com.example.helical_conveyor_design.data.network.material.MaterialRepository
 import com.example.helical_conveyor_design.objets.Coroutines
 import kotlinx.coroutines.Job
 
@@ -14,8 +14,8 @@ class MaterialesViewModel(
 
     private lateinit var job: Job
 
-    private val _materiales = MutableLiveData<List<Material>>()
-    val materiales : LiveData<List<Material>>
+    private val _materiales = MutableLiveData<List<MaterialModel>>()
+    val materiales : LiveData<List<MaterialModel>>
         get() = _materiales
 
     fun getMateriales(){

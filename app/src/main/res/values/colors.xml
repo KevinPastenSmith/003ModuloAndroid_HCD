@@ -11,5 +11,6 @@
     //Background NuevoMotor
     <color name="SeleccionaParametros_NuevoMotor">#8BC34A</color>
     <color name="ColorFondo_NuevoMotor">#AED581</color>
+    <color name="gris">#EBEBEB</color>
 
 </resources>

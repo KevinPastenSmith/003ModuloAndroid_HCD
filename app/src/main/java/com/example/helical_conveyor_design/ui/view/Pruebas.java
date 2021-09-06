@@ -13,6 +13,9 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.helical_conveyor_design.R;
+import com.example.helical_conveyor_design.ui.view.nuevo.NuevaHelice;
+import com.example.helical_conveyor_design.ui.view.nuevo.NuevoMaterial;
+import com.example.helical_conveyor_design.ui.view.nuevo.NuevoProyecto;
 
 public class Pruebas extends Fragment implements View.OnClickListener{
     ImageButton ibtn_nuevahelice,ibtn_nuevoMotor, ibtn_nuevoProyecto, ibtn_nuevoSistemaHelicoidal, ibtn_nuevoMaterial, ibtn_nuevoTransportador, ibtn_nuevoTubo;

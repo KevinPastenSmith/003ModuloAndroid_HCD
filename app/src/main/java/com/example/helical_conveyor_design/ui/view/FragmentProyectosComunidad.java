@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.helical_conveyor_design.R;
 import com.example.helical_conveyor_design.data.model.RecyclerProyectosComunidad;
-import com.example.helical_conveyor_design.ui.viewmodel.RecyclerProyectosComunidadAdapter;
+import com.example.helical_conveyor_design.Adapters.proyectosComunidad.RecyclerProyectosComunidadAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

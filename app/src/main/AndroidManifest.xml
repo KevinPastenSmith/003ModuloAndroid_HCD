@@ -5,57 +5,61 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".data.config.motor.MotorApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.Helical_Conveyor_Design">
+        android:theme="@style/Theme.Helical_Conveyor_Design"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.AdministrarMateriales"
+            android:name=".ui.view.AdministrarDatos.AdministrarParametros.AdministrarMotores"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.AdministrarParametros"
+            android:name=".ui.view.AdministrarMateriales"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.AdministrarProyectoActual"
+            android:name=".ui.view.AdministrarParametros"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.NuevoTubo"
+            android:name=".ui.view.AdministrarProyectoActual"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.NuevoTransportador"
+            android:name=".ui.view.nuevo.NuevoTubo"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.NuevoSistemaHelicoidal"
+            android:name=".ui.view.nuevo.NuevoTransportador"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.AdministrarMaterialActual"
+            android:name=".ui.view.nuevo.NuevoSistemaHelicoidal"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.DescriptionActivity"
+            android:name=".ui.view.AdministrarMaterialActual"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.NuevoMotorActivity"
+            android:name=".ui.view.DescriptionActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.helical_conveyor_design.ui.view.NuevaHelice"
+            android:name=".ui.view.nuevo.NuevoMotorActivity"
             android:exported="true" />
-        <activity android:name="com.example.helical_conveyor_design.ui.view.AdministrarProyectosGuardados" />
-        <activity android:name="com.example.helical_conveyor_design.ui.view.AdministrarDatosUsuario" />
-        <activity android:name="com.example.helical_conveyor_design.ui.view.NuevoProyecto" />
-        <activity android:name="com.example.helical_conveyor_design.ui.view.Logueo">
+        <activity
+            android:name=".ui.view.nuevo.NuevaHelice"
+            android:exported="true" />
+        <activity android:name=".ui.view.AdministrarProyectosGuardados" />
+        <activity android:name=".ui.view.AdministrarDatosUsuario" />
+        <activity android:name=".ui.view.nuevo.NuevoProyecto" />
+        <activity android:name=".ui.view.Logueo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.helical_conveyor_design.ui.view.Invitado" />
-        <activity android:name="com.example.helical_conveyor_design.ui.view.CrearCuenta" />
-        <activity android:name="com.example.helical_conveyor_design.ui.view.Inicio" />
-        <activity android:name="com.example.helical_conveyor_design.ui.view.NuevoMaterial" />
+        <activity android:name=".ui.view.Invitado" />
+        <activity android:name=".ui.view.CrearCuenta" />
+        <activity android:name=".ui.view.Inicio" />
+        <activity android:name=".ui.view.nuevo.NuevoMaterial" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.helical_conveyor_design.ui.viewmodel;
+package com.example.helical_conveyor_design.Adapters.proyectosComunidad;
 
 import android.content.Context;
 import android.graphics.Color;

@@ -8,12 +8,12 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.helical_conveyor_design.Adapters.MaterialesAdapter
+import com.example.helical_conveyor_design.Adapters.material.MaterialesAdapter
 import com.example.helical_conveyor_design.R
-import com.example.helical_conveyor_design.data.network.MaterialRepository
-import com.example.helical_conveyor_design.data.network.MaterialesApi
-import com.example.helical_conveyor_design.ui.viewmodel.MaterialesViewModel
-import com.example.helical_conveyor_design.ui.viewmodel.MaterialesViewModelFactory
+import com.example.helical_conveyor_design.data.network.material.MaterialRepository
+import com.example.helical_conveyor_design.data.network.material.MaterialesApi
+import com.example.helical_conveyor_design.ui.viewmodel.material.MaterialesViewModel
+import com.example.helical_conveyor_design.ui.viewmodel.material.MaterialesViewModelFactory
 import kotlinx.android.synthetic.main.materiales_fragment.*
 
 class MaterialesFragment : Fragment() {

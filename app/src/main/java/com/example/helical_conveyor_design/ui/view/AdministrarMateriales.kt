@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.helical_conveyor_design.R
-import com.example.helical_conveyor_design.ui.viewmodel.MaterialesViewModel
+import com.example.helical_conveyor_design.ui.viewmodel.material.MaterialesViewModel
 
 class AdministrarMateriales : AppCompatActivity() {
 
