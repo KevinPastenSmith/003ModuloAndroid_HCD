@@ -3,6 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/drawable/ic_baseline_portrait_24.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_datos_usuario.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_materiales.xml" value="0.22" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_motores.xml" value="0.28125" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_parametros.xml" value="0.29583333333333334" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_proyecto_actual.xml" value="0.29635416666666664" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_administrar_proyectos_guardados.xml" value="0.2791666666666667" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_inicio.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_invitado.xml" value="0.2791666666666667" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_logueo.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_material.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_motor.xml" value="0.25" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_sistema_helicoidal.xml" value="0.29635416666666664" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_transportador.xml" value="0.29635416666666664" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/activity_nuevo_tubo.xml" value="0.29635416666666664" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_administrar_datos.xml" value="0.25" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_administrar_proyecto_actual.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_materiales_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_nuevo.xml" value="0.33" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_proyectos_comunidad.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_proyectos_comunidad2.xml" value="0.265625" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_recycler_list_materiales.xml" value="0.2359375" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/fragment_recycler_list_materiales2.xml" value="0.25" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/item_list_motor.xml" value="0.29444444444444445" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/item_material.xml" value="0.25" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/materiales_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/prueba.xml" value="0.33" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/recycler_administrar_materiales.xml" value="0.265625" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/recycler_list_row.xml" value="0.25" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/recycler_material.xml" value="0.33" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/recycler_proyectoscomunidad.xml" value="0.265625" />
+        <entry key="..\:/Users/kevin/AndroidStudioProjects/003ModuloAndroid_HCD/app/src/main/res/layout/recyclermaterialprueba.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/drawable-v24/outline_contact_mail_24.xml" value="0.1" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout-land/fragment_nuevo.xml" value="0.35735735735735735" />
         <entry key="..\:/Users/kevin/AndroidStudioProjects/Helical_Conveyor_Design/app/src/main/res/layout/activity_administrar_datos.xml" value="0.2375" />

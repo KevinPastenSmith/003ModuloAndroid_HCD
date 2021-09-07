@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="nuevoMotor"
+            type="com.example.helical_conveyor_design.ui.viewmodel.motor.NuevoMotorViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.nuevo.NuevoMotorActivity">
+
+        <TextView
+            android:id="@+id/tvNuevoMotor_SeleccionaParametros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/tv_SeleccionaParametros_String"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etNombreMotor"
+            android:text="@={nuevoMotor.nombreMotorViewModel}"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:hint="@string/et_nombreNuevoMotor_String"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNuevoMotor_SeleccionaParametros"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tvNuevoMotor_establecerPosicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/tv_establecerPosicion_String"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etNombreMotor"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup_nuevoMotor"
+            android:layout_width="165dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNuevoMotor_establecerPosicion">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rb_posicionSuperior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_posicionSuperior_String"
+                />
+
+
+            <RadioButton
+                android:id="@+id/rb_posicionInferior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_posicionInferior_String"
+               />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvNuevoMotor_establecerSentidoGiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/tv_establecerPosicion_String"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup_nuevoMotor"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup_nmuevoMotor"
+            android:layout_width="165dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNuevoMotor_establecerSentidoGiro">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/rb_sentidoGiroAntiHorario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_sentidoGiroAntiHorario_String" />
+
+            <RadioButton
+                android:id="@+id/rb_sentidoGiroHorario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rbtn_sentidoGiroHorario_String" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCrearMotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_crearMotor_String"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup_nmuevoMotor"
+            android:onClick="@{()->nuevoMotor.guardarMotor()}"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
