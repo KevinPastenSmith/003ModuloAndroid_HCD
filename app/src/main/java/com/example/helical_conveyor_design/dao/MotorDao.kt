@@ -21,6 +21,4 @@ interface MotorDao {
     @Delete
      fun delete(motor: MotorModel): Int
 
-
-
 }

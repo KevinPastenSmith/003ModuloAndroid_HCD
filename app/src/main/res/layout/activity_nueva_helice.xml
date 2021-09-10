@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.view.nuevo.NuevaHelice"
-    android:background="@android:color/darker_gray">
+    tools:context=".ui.view.nuevo.NuevaHelice">
+
 
     <TextView
         android:id="@+id/tv_nuevahelice_nombrehelice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_nuevaHelice_strings"
-        android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/tv_nuevaHelice_strings"
+        android:textColor="@color/black"
         android:textSize="30sp"
-        android:layout_margin="8dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_nuevahelice_nombrehelice"
@@ -25,10 +29,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_nuevahelice_nombrehelice"
         android:layout_centerHorizontal="true"
-        android:hint="@string/et_nuevaHelice_strings"/>
-
+        android:layout_marginTop="30dp"
+        android:hint="@string/et_nuevaHelice_strings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nuevahelice_nombrehelice" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_nuevahelice_nombrehelice"
@@ -39,6 +47,4 @@
     </LinearLayout>
 
 
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
