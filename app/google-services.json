@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "210753797633",
+    "project_id": "helical-conveyor-design",
+    "storage_bucket": "helical-conveyor-design.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210753797633:android:b4a3f8ededcbdb2ce30a00",
+        "android_client_info": {
+          "package_name": "com.example.helical_conveyor_design"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210753797633-pfdjatlsara4rbmruin16en711j0k3u7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqHfLwB9vlG5lzEd4_0iYUhNaZckqeSvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210753797633-pfdjatlsara4rbmruin16en711j0k3u7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -7,7 +7,6 @@ class MotorApp: Application() {
     companion object{
         lateinit var dbMotor: MotorDb
     }
-
     override fun onCreate() {
         super.onCreate()
         dbMotor = Room.databaseBuilder(
@@ -15,7 +14,5 @@ class MotorApp: Application() {
             MotorDb::class.java,
             "motor"
         ).build()
-
     }
-
 }

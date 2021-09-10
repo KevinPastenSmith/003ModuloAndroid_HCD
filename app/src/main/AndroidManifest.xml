@@ -13,6 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Helical_Conveyor_Design"
         android:usesCleartextTraffic="true">
+        <activity android:name=".ui.view.Logueo"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.view.AdministrarDatos.AdministrarParametros.AdministrarMotores"
             android:exported="true" />
@@ -49,13 +57,7 @@
         <activity android:name=".ui.view.AdministrarProyectosGuardados" />
         <activity android:name=".ui.view.AdministrarDatosUsuario" />
         <activity android:name=".ui.view.nuevo.NuevoProyecto" />
-        <activity android:name=".ui.view.Logueo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".ui.view.Invitado" />
         <activity android:name=".ui.view.CrearCuenta" />
         <activity android:name=".ui.view.Inicio" />

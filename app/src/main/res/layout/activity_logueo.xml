@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -13,80 +14,97 @@
         app:srcCompat="@drawable/portadatransportadorhelicoidal"
         android:contentDescription="@string/imagen_de_fondo" />
 
-
-    <Button
-        android:id="@+id/btn_logueo_ingresar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="btn_ingresar"
-        android:text="@string/btn_logueo_Ingresar_String"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_logueo_password" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_logueo_crearcuenta"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:onClick="btn_crearCuenta"
-        android:text="@string/btn_logueo_CrearCuenta_String"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_logueo_ingresar" />
+        <EditText
+            android:id="@+id/et_logueo_mail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:hint="@string/et_logueo_Mail_String"
+            android:inputType="textEmailAddress" />
 
-    <Button
-        android:id="@+id/btn_logueo_invitado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:onClick="ingresarInvitado"
-        android:text="@string/btn_logueo_IngresarComoInvitado_String"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_logueo_crearcuenta" />
+        <EditText
+            android:id="@+id/et_logueo_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:hint="@string/et_logueo_Password_String"
+            android:inputType="textPassword" />
 
-    <EditText
-        android:background="@android:color/white"
-        android:id="@+id/et_logueo_nickInvitado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="@string/et_logueo_nickInvitado_String"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_logueo_invitado" />
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
 
-    <EditText
-        android:id="@+id/et_logueo_mail"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="@string/et_logueo_Mail_String"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/btn_logueo_ingresar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_ingresar"
+                android:text="@string/btn_logueo_Ingresar_String" />
 
-    <EditText
-        android:id="@+id/et_logueo_password"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="@string/et_logueo_Password_String"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_logueo_mail" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_logueo_crearcuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="btn_crearCuenta"
+                android:text="@string/btn_logueo_CrearCuenta_String" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/tv_mailregistrado"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/tv_provider"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <Button
+            android:id="@+id/btn_logueo_invitado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="ingresarInvitado"
+            android:text="@string/btn_logueo_IngresarComoInvitado_String" />
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/et_logueo_nickInvitado"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="@string/et_logueo_nickInvitado_String"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+</RelativeLayout>
